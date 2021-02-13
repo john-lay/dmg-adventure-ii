@@ -373,7 +373,43 @@
                 0
             ],
             "tileColors": [],
-            "script": [],
+            "script": [
+                {
+                    "id": "a57c7ab8-a11c-4114-a514-ba3eb790a953",
+                    "command": "EVENT_SET_INPUT_SCRIPT",
+                    "args": {
+                        "input": [
+                            "b"
+                        ],
+                        "persist": true,
+                        "__scriptTabs": "press"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "b74d6acc-ccd9-4cb3-94fb-6dd3be2dc109",
+                                "command": "EVENT_WEAPON_ATTACK",
+                                "args": {
+                                    "spriteSheetId": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
+                                    "actorId": "$self$",
+                                    "collisionGroup": "3",
+                                    "collisionMask": [
+                                        "1"
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "1115b11c-53bb-4e22-9f6f-c1dbb4cd6ca6",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "1dfb5422-0fc4-4bfe-8153-dc8ad9a03df7",
+                    "command": "EVENT_END"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -394,7 +430,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-1.png",
             "inode": "1970324838290598",
-            "_v": 1613151621690
+            "_v": 1613233650101
         },
         {
             "id": "6b335f84-c5d1-4cb5-867c-4f76c58fd982",
@@ -405,7 +441,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-2.png",
             "inode": "2251799815007722",
-            "_v": 1613151621690
+            "_v": 1613233650088
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -416,7 +452,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "2251799814457895",
-            "_v": 1613150505883
+            "_v": 1613233650083
         }
     ],
     "spriteSheets": [
@@ -427,7 +463,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "2251799814457899",
-            "_v": 1613150505898
+            "_v": 1613233650083
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -436,7 +472,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "2251799814457900",
-            "_v": 1613150505898
+            "_v": 1613233650083
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -445,7 +481,16 @@
             "type": "static",
             "filename": "static.png",
             "inode": "2251799814457901",
-            "_v": 1613150505898
+            "_v": 1613233650084
+        },
+        {
+            "id": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
+            "name": "wand",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "wand.png",
+            "inode": "1407374884875948",
+            "_v": 1613235182676
         },
         {
             "id": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab",
@@ -454,7 +499,7 @@
             "type": "actor_animated",
             "filename": "zelda.png",
             "inode": "1970324838297064",
-            "_v": 1613150574045
+            "_v": 1613233650083
         }
     ],
     "palettes": [
@@ -603,7 +648,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "2251799814457897",
-            "_v": 1613150505881
+            "_v": 1613233650066
         }
     ],
     "variables": [],
@@ -629,6 +674,26 @@
         "defaultUIPaletteId": "default-ui",
         "defaultFadeStyle": "white",
         "startDirection": "down",
-        "playerSpriteSheetId": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab"
+        "playerSpriteSheetId": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab",
+        "customControlsA": [
+            "Alt",
+            "z",
+            "j",
+            "2"
+        ],
+        "customControlsB": [
+            "Control",
+            "k",
+            "x",
+            "1"
+        ],
+        "customControlsStart": [
+            "Enter",
+            "."
+        ],
+        "customControlsSelect": [
+            "Shift",
+            "0"
+        ]
     }
 }

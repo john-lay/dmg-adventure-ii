@@ -375,6 +375,17 @@
             "tileColors": [],
             "script": [
                 {
+                    "id": "bce90804-0205-4518-a18c-d4c962aa5adf",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "0",
+                        "value": {
+                            "type": "number",
+                            "value": 4
+                        }
+                    }
+                },
+                {
                     "id": "a57c7ab8-a11c-4114-a514-ba3eb790a953",
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
@@ -382,7 +393,8 @@
                             "b"
                         ],
                         "persist": true,
-                        "__scriptTabs": "press"
+                        "__scriptTabs": "press",
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -420,7 +432,7 @@
             "playerHit3Script": [],
             "id": "f6717d38-39ec-4dfe-bd57-526db3c9329b",
             "x": 457,
-            "y": 305,
+            "y": 304.6666666666667,
             "actors": [
                 {
                     "name": "Darknut",
@@ -436,17 +448,31 @@
                             "id": "fa858120-1c49-4a43-9b26-93450b16196b",
                             "command": "EVENT_ACTOR_PUSH",
                             "args": {
-                                "continue": false
+                                "continue": true,
+                                "__collapse": false
                             }
                         },
                         {
-                            "id": "6dcb6aaa-ca75-422d-985b-fc76ec66b45d",
-                            "command": "EVENT_TEXT",
+                            "id": "119336cb-359a-40ea-bef1-dd8f81689531",
+                            "command": "EVENT_DEC_VALUE",
                             "args": {
-                                "text": [
-                                    "enemy hit zelda"
-                                ],
-                                "avatarId": "daf95270-e30d-423b-9ee7-990ae29f57f6"
+                                "variable": "0"
+                            }
+                        },
+                        {
+                            "id": "3d021933-f649-498e-a9cf-4145edf6e3bb",
+                            "command": "EVENT_ACTOR_INVOKE",
+                            "args": {
+                                "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6",
+                                "__comment": true
+                            }
+                        },
+                        {
+                            "id": "aaa1f1f9-61ec-4565-908a-3a4178b482b5",
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "player",
+                                "emoteId": 0
                             }
                         },
                         {
@@ -714,8 +740,479 @@
                     "y": 9,
                     "isPinned": false,
                     "collisionGroup": "1"
+                },
+                {
+                    "name": "Heart Pair 2",
+                    "frame": 1,
+                    "animate": false,
+                    "spriteSheetId": "3b590b15-d948-4fd2-88b0-6e6782d14969",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "3f65cf2a-6970-4a99-9e0a-9c7f5f6722ac",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "id": "8d5b0cb1-db33-4fca-9f79-fa80c9c202a7",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Update Heart Pair 2",
+                                "__collapse": true,
+                                "__comment": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "cb385705-4671-44a7-8cab-8105389d8ba6",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "==",
+                                            "comparator": 3,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "797eeab8-265e-497a-96ed-07a4c2bb3b93",
+                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                    "args": {
+                                                        "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6",
+                                                        "frame": {
+                                                            "type": "number",
+                                                            "value": 0
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "45abd1d9-ffd3-4bf2-ab4e-2dfef4447f7c",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "e61e5a3d-b156-49d1-b2d6-db64495802e9",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "5b6ae90c-e551-4005-9353-ae9ccbec109e",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "<",
+                                            "comparator": 3,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "a74629e4-ed34-4cfb-89c6-47f75824b799",
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "81bf423c-2d49-4439-8f46-404bebd82711",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "774d7b0c-621f-4bac-bb54-e7e51b86c5e4",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "527803f2-e141-45b3-85ed-e670c994a0c8",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ffd64219-833b-400a-bcdd-ab7f0b92d0c5",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "updateScript": [
+                        {
+                            "id": "63ec82fc-5f1c-4cbd-ada8-ea4a52226564",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Update Heart Pair 2",
+                                "__collapse": false,
+                                "__comment": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "cc3f159a-7c74-4f54-805e-36abd22f434a",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "==",
+                                            "comparator": 3,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "9e8a5f97-8a31-4cce-840d-b57ca668f7b4",
+                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                    "args": {
+                                                        "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6",
+                                                        "frame": {
+                                                            "type": "number",
+                                                            "value": 0
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "37f85655-a0ff-475a-8a78-e0279d980596",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "d9105380-0ea7-42ff-a9ce-030989ed82cd",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "c607d31b-8124-4511-8e97-44e4e8f27183",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "<",
+                                            "comparator": 3,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "2aa01476-71fd-4473-88d7-6f8313444c0f",
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c6db7617-2ace-436e-b401-4f15245ffb65",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "c85a0cdf-6311-4a08-85f3-842894aaa647",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "0b12022b-460e-4bd5-9175-399e5d2e8533",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "f77de50b-807a-48b7-97ac-3868b527e4e1",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8cf3092a-5588-4072-b2b3-d42cbf215ef6",
+                    "x": 17,
+                    "y": 0,
+                    "isPinned": true
+                },
+                {
+                    "name": "Heart Pair 1",
+                    "frame": 1,
+                    "animate": false,
+                    "spriteSheetId": "3b590b15-d948-4fd2-88b0-6e6782d14969",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "id": "4880c265-c8ac-499c-a451-c94f61b640b1",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Update Heart Pair 1",
+                                "__collapse": true,
+                                "__comment": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "bc67572a-57d0-45dc-adf6-f0a0d186d01c",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "==",
+                                            "comparator": 1,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "4b6db256-d240-44ef-ac73-0d62e7701047",
+                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                    "args": {
+                                                        "actorId": "af7ad4fc-066e-480b-a848-c37007fb5ac9",
+                                                        "frame": {
+                                                            "type": "number",
+                                                            "value": 0
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "827ab269-c97c-4d51-8876-819902a640b0",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "a1bf125a-a872-4aad-8f9e-acf40fb55254",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "4dea0b0f-dde6-4ee9-a485-40fb33600cfe",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "<",
+                                            "comparator": 1,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "c37c0367-11c7-42d7-910b-152ecfbe2b58",
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "9065a26b-6f9f-4607-a0be-a04126fc1e32",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "02c45a62-7907-4abe-ab19-2c61429bcd53",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "cb94b883-2ef0-435e-a786-b8327a5bd185",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3d1f81ce-987a-4803-a8bf-b7efff9529cb",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "updateScript": [
+                        {
+                            "id": "210bfeb5-1cc3-45a3-9f54-52f8b670da11",
+                            "command": "EVENT_GROUP",
+                            "args": {
+                                "__label": "Update Heart Pair 1",
+                                "__collapse": true,
+                                "__comment": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "9c524da1-edd2-4818-a3b4-2f79b042c5d1",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "==",
+                                            "comparator": 1,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "939948fb-730f-4fee-b747-3e069e263de5",
+                                                    "command": "EVENT_ACTOR_SET_FRAME",
+                                                    "args": {
+                                                        "actorId": "af7ad4fc-066e-480b-a848-c37007fb5ac9",
+                                                        "frame": {
+                                                            "type": "number",
+                                                            "value": 0
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b5dd17ec-3312-41f3-965e-3f843e87c30d",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "91a2c0f7-bade-4c5a-97ea-e65c7c79469b",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "97d216dc-5207-4181-99fc-4d03837f86cd",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "0",
+                                            "operator": "<",
+                                            "comparator": 1,
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "44156ed1-6328-4189-a9a4-ad5cb8d0ab31",
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "399f4fa9-7672-478f-aea7-822a1d5a92a8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "69479f04-1248-4dea-a0d3-8a2d4b738ed4",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "73125f91-55de-43cb-a9df-706500a7f527",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "6c3180ae-14f2-443b-ace9-0c4e35273f14",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "af7ad4fc-066e-480b-a848-c37007fb5ac9",
+                    "x": 15,
+                    "y": 0,
+                    "isPinned": true
                 }
             ],
+            "triggers": []
+        },
+        {
+            "name": "Intro",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "tileColors": [],
+            "script": [
+                {
+                    "id": "7c1ace2f-361b-4cb0-aa7a-039d74bf6039",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "$self$"
+                    }
+                },
+                {
+                    "id": "3711bd0b-d3dc-4e0c-8f17-4a1e19144b28",
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "0",
+                        "value": {
+                            "type": "number",
+                            "value": 4
+                        }
+                    }
+                },
+                {
+                    "id": "3c1583ef-abf7-4567-bafc-916f07dc809f",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.1
+                    }
+                },
+                {
+                    "id": "78083ee6-40db-437a-8deb-ae3e69cf9b85",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "f6717d38-39ec-4dfe-bd57-526db3c9329b",
+                        "x": 16,
+                        "y": 12,
+                        "direction": "down",
+                        "fadeSpeed": "1"
+                    }
+                },
+                {
+                    "id": "eda537b3-68c4-4529-88bb-583c3a856ed6",
+                    "command": "EVENT_END"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "id": "15ec055a-1ac0-4d00-903a-b2d03333a49e",
+            "x": 269.66666666666646,
+            "y": 307.66666666666646,
+            "actors": [],
             "triggers": []
         }
     ],
@@ -729,7 +1226,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-1.png",
             "inode": "1970324838290598",
-            "_v": 1613233650101
+            "_v": 1613301493531
         },
         {
             "id": "6b335f84-c5d1-4cb5-867c-4f76c58fd982",
@@ -740,7 +1237,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-2.png",
             "inode": "2251799815007722",
-            "_v": 1613233650088
+            "_v": 1613301493532
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -751,7 +1248,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "2251799814457895",
-            "_v": 1613233650083
+            "_v": 1613301493526
         }
     ],
     "spriteSheets": [
@@ -762,7 +1259,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "2251799814457899",
-            "_v": 1613233650083
+            "_v": 1613301493526
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -771,7 +1268,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "2251799814457900",
-            "_v": 1613233650083
+            "_v": 1613301493526
         },
         {
             "id": "38050e64-8d64-4723-9410-94e87ecda065",
@@ -780,7 +1277,16 @@
             "type": "actor_animated",
             "filename": "darknut.png",
             "inode": "1407374884875935",
-            "_v": 1613235958993
+            "_v": 1613301493526
+        },
+        {
+            "id": "3b590b15-d948-4fd2-88b0-6e6782d14969",
+            "name": "heart",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "heart.png",
+            "inode": "1407374884875976",
+            "_v": 1613301493526
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -789,7 +1295,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "2251799814457901",
-            "_v": 1613233650084
+            "_v": 1613301493526
         },
         {
             "id": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
@@ -798,7 +1304,7 @@
             "type": "actor",
             "filename": "wand.png",
             "inode": "1407374884875948",
-            "_v": 1613235182676
+            "_v": 1613301493526
         },
         {
             "id": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab",
@@ -807,7 +1313,7 @@
             "type": "actor_animated",
             "filename": "zelda.png",
             "inode": "1970324838297064",
-            "_v": 1613233650083
+            "_v": 1613301493546
         }
     ],
     "palettes": [
@@ -956,17 +1462,22 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "2251799814457897",
-            "_v": 1613233650066
+            "_v": 1613301493509
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "0",
+            "name": "Health"
+        }
+    ],
     "settings": {
-        "startSceneId": "f6717d38-39ec-4dfe-bd57-526db3c9329b",
-        "startX": 16,
-        "startY": 12,
+        "startSceneId": "15ec055a-1ac0-4d00-903a-b2d03333a49e",
+        "startX": 9,
+        "startY": 8,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 830,
+        "worldScrollX": 457,
         "worldScrollY": 783,
         "zoom": 300,
         "customColorsEnabled": false,

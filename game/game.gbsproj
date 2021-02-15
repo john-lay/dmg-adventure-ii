@@ -375,17 +375,6 @@
             "tileColors": [],
             "script": [
                 {
-                    "id": "bce90804-0205-4518-a18c-d4c962aa5adf",
-                    "command": "EVENT_SET_VALUE",
-                    "args": {
-                        "variable": "0",
-                        "value": {
-                            "type": "number",
-                            "value": 4
-                        }
-                    }
-                },
-                {
                     "id": "a57c7ab8-a11c-4114-a514-ba3eb790a953",
                     "command": "EVENT_SET_INPUT_SCRIPT",
                     "args": {
@@ -394,7 +383,7 @@
                         ],
                         "persist": true,
                         "__scriptTabs": "press",
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -424,6 +413,95 @@
             ],
             "playerHit1Script": [
                 {
+                    "id": "b0b04de6-aafd-4ba0-8f70-10057890bcf5",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Zelda hit by group\n1"
+                        ],
+                        "avatarId": "",
+                        "__comment": true
+                    }
+                },
+                {
+                    "id": "e8a93281-c291-4f26-bff4-f462125aec10",
+                    "command": "EVENT_WAIT",
+                    "args": {
+                        "time": 0.5,
+                        "__comment": true
+                    }
+                },
+                {
+                    "id": "98773c8f-a27b-415a-90bb-a5ced5a0152c",
+                    "command": "EVENT_STOP",
+                    "args": {
+                        "__comment": true
+                    }
+                },
+                {
+                    "id": "cf7ceef2-9d5d-468b-bfd1-6d4be7524c33",
+                    "command": "EVENT_IF_FALSE",
+                    "args": {
+                        "variable": "L0",
+                        "__collapseElse": false,
+                        "__label": "Issue #698"
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "a3ccec84-a2a9-4845-a569-0a90fb915b06",
+                                "command": "EVENT_SET_TRUE",
+                                "args": {
+                                    "variable": "L0"
+                                }
+                            },
+                            {
+                                "id": "3775620a-0dcd-48d7-b3b2-c919e6b42eca",
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 0.5,
+                                    "__comment": false
+                                }
+                            },
+                            {
+                                "id": "3c5cc770-c858-48a3-bae9-971feae08167",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "Zelda hit by group\n1"
+                                    ],
+                                    "avatarId": "",
+                                    "__comment": false
+                                }
+                            },
+                            {
+                                "id": "9afbcb1f-2ec6-4bea-90db-b0f7acaa3b77",
+                                "command": "EVENT_SET_FALSE",
+                                "args": {
+                                    "variable": "L0"
+                                }
+                            },
+                            {
+                                "id": "fc0d3a95-53b3-4185-abce-16ec3eeae2f6",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "62bb360c-a7d8-4f58-a0fb-290a7945de70",
+                                "command": "EVENT_STOP",
+                                "args": {
+                                    "__comment": false
+                                }
+                            },
+                            {
+                                "id": "9c2fb612-3b80-4de7-8aab-06471c7c1136",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
                     "id": "c95c6c06-8a8c-4d33-a6d5-0a780241d81c",
                     "command": "EVENT_END"
                 }
@@ -432,7 +510,7 @@
             "playerHit3Script": [],
             "id": "f6717d38-39ec-4dfe-bd57-526db3c9329b",
             "x": 457,
-            "y": 304.6666666666667,
+            "y": 304.33333333333337,
             "actors": [
                 {
                     "name": "Darknut",
@@ -445,34 +523,132 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "fa858120-1c49-4a43-9b26-93450b16196b",
-                            "command": "EVENT_ACTOR_PUSH",
-                            "args": {
-                                "continue": true,
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "119336cb-359a-40ea-bef1-dd8f81689531",
-                            "command": "EVENT_DEC_VALUE",
-                            "args": {
-                                "variable": "0"
-                            }
-                        },
-                        {
-                            "id": "3d021933-f649-498e-a9cf-4145edf6e3bb",
-                            "command": "EVENT_ACTOR_INVOKE",
-                            "args": {
-                                "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6",
-                                "__comment": true
-                            }
-                        },
-                        {
                             "id": "aaa1f1f9-61ec-4565-908a-3a4178b482b5",
                             "command": "EVENT_ACTOR_EMOTE",
                             "args": {
                                 "actorId": "player",
-                                "emoteId": 0
+                                "emoteId": 0,
+                                "__collapse": true,
+                                "__comment": true
+                            }
+                        },
+                        {
+                            "id": "09bc0354-081a-47aa-8e1e-cad48edd449f",
+                            "command": "EVENT_DEC_VALUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapse": true,
+                                "__comment": true
+                            }
+                        },
+                        {
+                            "id": "fa858120-1c49-4a43-9b26-93450b16196b",
+                            "command": "EVENT_ACTOR_PUSH",
+                            "args": {
+                                "continue": true,
+                                "__collapse": true,
+                                "__comment": true
+                            }
+                        },
+                        {
+                            "id": "69503c5d-6b2c-4f8e-a565-082fb62b72f9",
+                            "command": "EVENT_WAIT",
+                            "args": {
+                                "time": 0.5,
+                                "__comment": true,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "1defe196-0d9c-4bef-9c54-44777450a764",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "enemy hit zelda"
+                                ],
+                                "avatarId": "",
+                                "__comment": true,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "e7abb00b-b7ff-46b8-af64-81cf6f14ec8b",
+                            "command": "EVENT_STOP",
+                            "args": {
+                                "__comment": true,
+                                "__collapse": true
+                            }
+                        },
+                        {
+                            "id": "f62ee4d1-4a37-43d6-a62b-8c01a073d21e",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__label": "Issue #698"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "4015f4e4-840f-4235-9e1c-e643219768a2",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "7db6c1ae-9a9f-45f5-bd9d-77ea2043697c",
+                                        "command": "EVENT_ACTOR_PUSH",
+                                        "args": {
+                                            "continue": true,
+                                            "__collapse": false,
+                                            "__comment": false
+                                        }
+                                    },
+                                    {
+                                        "id": "471aa570-d6d6-4547-b014-58726a9eb596",
+                                        "command": "EVENT_WAIT",
+                                        "args": {
+                                            "time": 0.5,
+                                            "__comment": false
+                                        }
+                                    },
+                                    {
+                                        "id": "53ebf303-c3c7-4f62-931b-470e11d89600",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "enemy hit zelda"
+                                            ],
+                                            "avatarId": "",
+                                            "__comment": true
+                                        }
+                                    },
+                                    {
+                                        "id": "8e81b611-4e3f-4f2c-ae30-f4ef120243a4",
+                                        "command": "EVENT_SET_FALSE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "6ec3ba88-40e2-4905-abf6-04681c413990",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "1f36f61f-aa08-423f-b05e-646262707dd7",
+                                        "command": "EVENT_STOP",
+                                        "args": {
+                                            "__comment": false
+                                        }
+                                    },
+                                    {
+                                        "id": "4023eb0e-7982-40e7-b3e2-e5faf3f923db",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -718,14 +894,16 @@
                                 "text": [
                                     "enemy hit by\nwand in group\n1"
                                 ],
-                                "avatarId": ""
+                                "avatarId": "",
+                                "__comment": true
                             }
                         },
                         {
                             "id": "62512a3a-698e-4737-9619-aad3fb553ff6",
                             "command": "EVENT_ACTOR_HIDE",
                             "args": {
-                                "actorId": "$self$"
+                                "actorId": "$self$",
+                                "__comment": false
                             }
                         },
                         {
@@ -1059,7 +1237,7 @@
                             "command": "EVENT_GROUP",
                             "args": {
                                 "__label": "Update Heart Pair 1",
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__comment": false
                             },
                             "children": {
@@ -1153,6 +1331,25 @@
                     "x": 15,
                     "y": 0,
                     "isPinned": true
+                },
+                {
+                    "name": "Collectable",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "808cf60c-ed6a-4b07-b231-c5f3c6628085",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "a9e3a645-0db8-471e-8bb7-58fc79a1d05b",
+                    "x": 9,
+                    "y": 0
                 }
             ],
             "triggers": []
@@ -1211,7 +1408,7 @@
             "playerHit3Script": [],
             "id": "15ec055a-1ac0-4d00-903a-b2d03333a49e",
             "x": 269.66666666666646,
-            "y": 307.66666666666646,
+            "y": 307.33333333333314,
             "actors": [],
             "triggers": []
         }
@@ -1226,7 +1423,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-1.png",
             "inode": "1970324838290598",
-            "_v": 1613301493531
+            "_v": 1613397674214
         },
         {
             "id": "6b335f84-c5d1-4cb5-867c-4f76c58fd982",
@@ -1237,7 +1434,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-2.png",
             "inode": "2251799815007722",
-            "_v": 1613301493532
+            "_v": 1613397674214
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -1248,7 +1445,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "2251799814457895",
-            "_v": 1613301493526
+            "_v": 1613397674214
         }
     ],
     "spriteSheets": [
@@ -1259,7 +1456,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "2251799814457899",
-            "_v": 1613301493526
+            "_v": 1613397674214
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -1268,7 +1465,16 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "2251799814457900",
-            "_v": 1613301493526
+            "_v": 1613397674214
+        },
+        {
+            "id": "808cf60c-ed6a-4b07-b231-c5f3c6628085",
+            "name": "collectable",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "collectable.png",
+            "inode": "2251799815007896",
+            "_v": 1613397674214
         },
         {
             "id": "38050e64-8d64-4723-9410-94e87ecda065",
@@ -1277,7 +1483,7 @@
             "type": "actor_animated",
             "filename": "darknut.png",
             "inode": "1407374884875935",
-            "_v": 1613301493526
+            "_v": 1613397674231
         },
         {
             "id": "3b590b15-d948-4fd2-88b0-6e6782d14969",
@@ -1286,7 +1492,7 @@
             "type": "animated",
             "filename": "heart.png",
             "inode": "1407374884875976",
-            "_v": 1613301493526
+            "_v": 1613397674214
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -1295,7 +1501,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "2251799814457901",
-            "_v": 1613301493526
+            "_v": 1613397674214
         },
         {
             "id": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
@@ -1304,7 +1510,7 @@
             "type": "actor",
             "filename": "wand.png",
             "inode": "1407374884875948",
-            "_v": 1613301493526
+            "_v": 1613397674237
         },
         {
             "id": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab",
@@ -1313,7 +1519,7 @@
             "type": "actor_animated",
             "filename": "zelda.png",
             "inode": "1970324838297064",
-            "_v": 1613301493546
+            "_v": 1613397674231
         }
     ],
     "palettes": [
@@ -1462,7 +1668,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "2251799814457897",
-            "_v": 1613301493509
+            "_v": 1613397674155
         }
     ],
     "variables": [
@@ -1477,8 +1683,8 @@
         "startY": 8,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 457,
-        "worldScrollY": 783,
+        "worldScrollX": 939,
+        "worldScrollY": 883,
         "zoom": 300,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [

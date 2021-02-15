@@ -1587,6 +1587,10 @@
         {
             "id": "0",
             "name": "Health"
+        },
+        {
+            "id": "f6717d38-39ec-4dfe-bd57-526db3c9329b__L0",
+            "name": "Taken Damage"
         }
     ],
     "settings": {

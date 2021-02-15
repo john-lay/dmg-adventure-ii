@@ -413,38 +413,12 @@
             ],
             "playerHit1Script": [
                 {
-                    "id": "b0b04de6-aafd-4ba0-8f70-10057890bcf5",
-                    "command": "EVENT_TEXT",
-                    "args": {
-                        "text": [
-                            "Zelda hit by group\n1"
-                        ],
-                        "avatarId": "",
-                        "__comment": true
-                    }
-                },
-                {
-                    "id": "e8a93281-c291-4f26-bff4-f462125aec10",
-                    "command": "EVENT_WAIT",
-                    "args": {
-                        "time": 0.5,
-                        "__comment": true
-                    }
-                },
-                {
-                    "id": "98773c8f-a27b-415a-90bb-a5ced5a0152c",
-                    "command": "EVENT_STOP",
-                    "args": {
-                        "__comment": true
-                    }
-                },
-                {
                     "id": "cf7ceef2-9d5d-468b-bfd1-6d4be7524c33",
                     "command": "EVENT_IF_FALSE",
                     "args": {
                         "variable": "L0",
                         "__collapseElse": false,
-                        "__label": "Issue #698"
+                        "__label": "Take damage"
                     },
                     "children": {
                         "true": [
@@ -456,21 +430,29 @@
                                 }
                             },
                             {
-                                "id": "3775620a-0dcd-48d7-b3b2-c919e6b42eca",
-                                "command": "EVENT_WAIT",
+                                "id": "f3a7f97c-da53-4e52-b34c-73aa49fb4048",
+                                "command": "EVENT_ACTOR_EMOTE",
                                 "args": {
-                                    "time": 0.5,
+                                    "actorId": "player",
+                                    "emoteId": "4",
+                                    "__collapse": false,
                                     "__comment": false
                                 }
                             },
                             {
-                                "id": "3c5cc770-c858-48a3-bae9-971feae08167",
-                                "command": "EVENT_TEXT",
+                                "id": "c80283c8-7b24-463e-a1d3-25b96108d37e",
+                                "command": "EVENT_DEC_VALUE",
                                 "args": {
-                                    "text": [
-                                        "Zelda hit by group\n1"
-                                    ],
-                                    "avatarId": "",
+                                    "variable": "0",
+                                    "__collapse": true,
+                                    "__comment": false
+                                }
+                            },
+                            {
+                                "id": "3775620a-0dcd-48d7-b3b2-c919e6b42eca",
+                                "command": "EVENT_WAIT",
+                                "args": {
+                                    "time": 0.5,
                                     "__comment": false
                                 }
                             },
@@ -510,7 +492,7 @@
             "playerHit3Script": [],
             "id": "f6717d38-39ec-4dfe-bd57-526db3c9329b",
             "x": 457,
-            "y": 304.33333333333337,
+            "y": 304.6666666666667,
             "actors": [
                 {
                     "name": "Darknut",
@@ -523,69 +505,13 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "aaa1f1f9-61ec-4565-908a-3a4178b482b5",
-                            "command": "EVENT_ACTOR_EMOTE",
-                            "args": {
-                                "actorId": "player",
-                                "emoteId": 0,
-                                "__collapse": true,
-                                "__comment": true
-                            }
-                        },
-                        {
-                            "id": "09bc0354-081a-47aa-8e1e-cad48edd449f",
-                            "command": "EVENT_DEC_VALUE",
-                            "args": {
-                                "variable": "0",
-                                "__collapse": true,
-                                "__comment": true
-                            }
-                        },
-                        {
-                            "id": "fa858120-1c49-4a43-9b26-93450b16196b",
-                            "command": "EVENT_ACTOR_PUSH",
-                            "args": {
-                                "continue": true,
-                                "__collapse": true,
-                                "__comment": true
-                            }
-                        },
-                        {
-                            "id": "69503c5d-6b2c-4f8e-a565-082fb62b72f9",
-                            "command": "EVENT_WAIT",
-                            "args": {
-                                "time": 0.5,
-                                "__comment": true,
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "1defe196-0d9c-4bef-9c54-44777450a764",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "enemy hit zelda"
-                                ],
-                                "avatarId": "",
-                                "__comment": true,
-                                "__collapse": true
-                            }
-                        },
-                        {
-                            "id": "e7abb00b-b7ff-46b8-af64-81cf6f14ec8b",
-                            "command": "EVENT_STOP",
-                            "args": {
-                                "__comment": true,
-                                "__collapse": true
-                            }
-                        },
-                        {
                             "id": "f62ee4d1-4a37-43d6-a62b-8c01a073d21e",
                             "command": "EVENT_IF_FALSE",
                             "args": {
                                 "variable": "L0",
                                 "__collapseElse": false,
-                                "__label": "Issue #698"
+                                "__label": "Push away",
+                                "__collapse": true
                             },
                             "children": {
                                 "true": [
@@ -611,17 +537,6 @@
                                         "args": {
                                             "time": 0.5,
                                             "__comment": false
-                                        }
-                                    },
-                                    {
-                                        "id": "53ebf303-c3c7-4f62-931b-470e11d89600",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "enemy hit zelda"
-                                            ],
-                                            "avatarId": "",
-                                            "__comment": true
                                         }
                                     },
                                     {
@@ -888,14 +803,11 @@
                     ],
                     "hit1Script": [
                         {
-                            "id": "504b1e42-fa78-49d7-b8d2-0a0a1f8fb94a",
-                            "command": "EVENT_TEXT",
+                            "id": "7beb0d24-c204-4ac4-a5c2-2d006e50136c",
+                            "command": "EVENT_ACTOR_EMOTE",
                             "args": {
-                                "text": [
-                                    "enemy hit by\nwand in group\n1"
-                                ],
-                                "avatarId": "",
-                                "__comment": true
+                                "actorId": "$self$",
+                                "emoteId": "0"
                             }
                         },
                         {
@@ -1683,7 +1595,7 @@
         "startY": 8,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 939,
+        "worldScrollX": 457,
         "worldScrollY": 883,
         "zoom": 300,
         "customColorsEnabled": false,

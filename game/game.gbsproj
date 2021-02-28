@@ -439,7 +439,7 @@
                                                                     "command": "EVENT_GROUP",
                                                                     "args": {
                                                                         "__label": "Launch Projectile",
-                                                                        "__collapse": true
+                                                                        "__collapse": false
                                                                     },
                                                                     "children": {
                                                                         "true": [
@@ -459,7 +459,7 @@
                                                                                             "id": "09b52289-d610-4f45-a0d9-cd85df8f2f35",
                                                                                             "command": "EVENT_LAUNCH_PROJECTILE",
                                                                                             "args": {
-                                                                                                "spriteSheetId": "ce37305b-fda3-4384-a5c5-cc47245a4d5c",
+                                                                                                "spriteSheetId": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
                                                                                                 "actorId": "$self$",
                                                                                                 "direction": {
                                                                                                     "type": "direction",
@@ -470,7 +470,7 @@
                                                                                                 "collisionMask": [
                                                                                                     "1"
                                                                                                 ],
-                                                                                                "__collapse": true
+                                                                                                "__collapse": false
                                                                                             }
                                                                                         },
                                                                                         {
@@ -502,7 +502,7 @@
                                                                                             "id": "d5885dc4-6aab-4d21-87e9-62529cfb0911",
                                                                                             "command": "EVENT_LAUNCH_PROJECTILE",
                                                                                             "args": {
-                                                                                                "spriteSheetId": "ce37305b-fda3-4384-a5c5-cc47245a4d5c",
+                                                                                                "spriteSheetId": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
                                                                                                 "actorId": "$self$",
                                                                                                 "direction": {
                                                                                                     "type": "direction",
@@ -513,7 +513,7 @@
                                                                                                 "collisionMask": [
                                                                                                     "1"
                                                                                                 ],
-                                                                                                "__collapse": true
+                                                                                                "__collapse": false
                                                                                             }
                                                                                         },
                                                                                         {
@@ -545,7 +545,7 @@
                                                                                             "id": "2acc0381-c27d-41c5-bc73-f84038afd616",
                                                                                             "command": "EVENT_LAUNCH_PROJECTILE",
                                                                                             "args": {
-                                                                                                "spriteSheetId": "ce37305b-fda3-4384-a5c5-cc47245a4d5c",
+                                                                                                "spriteSheetId": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
                                                                                                 "actorId": "$self$",
                                                                                                 "direction": {
                                                                                                     "type": "direction",
@@ -556,7 +556,7 @@
                                                                                                 "collisionMask": [
                                                                                                     "1"
                                                                                                 ],
-                                                                                                "__collapse": true
+                                                                                                "__collapse": false
                                                                                             }
                                                                                         },
                                                                                         {
@@ -588,7 +588,7 @@
                                                                                             "id": "c7fce168-d55c-4a91-a22d-0a5b215364d2",
                                                                                             "command": "EVENT_LAUNCH_PROJECTILE",
                                                                                             "args": {
-                                                                                                "spriteSheetId": "ce37305b-fda3-4384-a5c5-cc47245a4d5c",
+                                                                                                "spriteSheetId": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
                                                                                                 "actorId": "$self$",
                                                                                                 "direction": {
                                                                                                     "type": "direction",

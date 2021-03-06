@@ -30,7 +30,7 @@ The same is done for the health (hearts). This was done for DMG Adventure (part 
 - The heart / rupee collectible was responsible for dislaying the right collectable item, but it was incorrectly responsible for updating the heart and rupee counter.
 
 # Enemy References
-Where possible enemies have been identified in Zelda's Adventure and their namesake has been used from Link's Awakening. When the enemy doesn't exist in Link's Awakening I've tried to carefully substitute it with an enemy that is both similar and more likely to be unique to Link's Awakening. This is to prevent future iterations of the project from having collisions when I try to identify enemies later in the game and find I've already used their counterpart.
+Where possible enemies have been identified in Zelda's Adventure and their conterpart has been used from Link's Awakening. When the enemy doesn't exist in Link's Awakening I've tried to carefully substitute it with an enemy that is both similar and likely to be unique to Link's Awakening. This is to prevent future iterations of the project from having collisions when I try to identify enemies later in the game and find I've already used their counterpart.
 [Enemies from Zelda's Adventure](https://zelda.gamepedia.com/Enemies_in_Zelda%27s_Adventure) \
 [Enemies from Link's Awakening](https://zelda.gamepedia.com/Enemies_in_Link%27s_Awakening)
 

@@ -13,11 +13,23 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
 * `$02$: Variable 002` Collectable - `byte`.
   * (Flag 1 represents the enemy dropping a rupee)
   * (Flag 2 represents the enemy dropping a heart)
-  * (Flag 3 is the noise spell)
-  * (Flag 4 is the harp)
+  * (Flag 3 is the Noise spell)
+  * (Flag 4 is the Harp)
+  * (Flag 5 is ???)
+  * (Flag 6 is ???)
+  * (Flag 7 is ???)
+  * (Flag 8 is ???)
 * `$03$: Variable 003` Equipped - `byte`.
   * (Flag 1 represents Zelda has the noise spell equipped)
-  
+* `$04$: Variable 004` Purchasable - `byte`.
+  * (Flag 1 is the Turquoise Ring)
+  * (Flag 2 is the Jade Amulet)
+  * (Flag 3 is the Rings of Fire)
+  * (Flag 4 is ???)
+  * (Flag 5 is ???)
+  * (Flag 6 is ???)
+  * (Flag 7 is ???)
+  * (Flag 8 is ???)
 
 # Dev Notes
 ## Encapsulation

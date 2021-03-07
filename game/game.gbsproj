@@ -2609,7 +2609,7 @@
                                         "args": {
                                             "actorId": "fb618cd5-fd98-4a07-a000-464298edf8ef",
                                             "__label": "update rupee counter UI",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -4135,7 +4135,7 @@
                         "variable": "1",
                         "value": {
                             "type": "number",
-                            "value": 0
+                            "value": 21
                         },
                         "__collapse": false,
                         "__label": "Init Rupees"
@@ -7151,9 +7151,26 @@
                 0,
                 0,
                 0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7170,8 +7187,10 @@
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7188,8 +7207,10 @@
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7206,8 +7227,10 @@
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7218,12 +7241,16 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7234,12 +7261,16 @@
                 0,
                 0,
                 0,
+                15,
+                15,
                 0,
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7256,8 +7287,10 @@
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
@@ -7274,59 +7307,26 @@
                 0,
                 0,
                 0,
+                15,
                 0,
                 0,
                 0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
                 0,
                 0,
                 0,
@@ -9382,7 +9382,30 @@
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "script": [],
+                    "script": [
+                        {
+                            "id": "b66b8a90-006d-4402-bb5d-7196bbe4a826",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "At last! Madame\nKriggle is\napproached by an",
+                                    "innocent who\nwishes to grow in\nthe use of magic",
+                                    "and spells. My\nold friend Shurmak\nhas told me of",
+                                    "your coming. I\nhave awaited you\nmany moons and",
+                                    "suns! It is\nimportant to\nremember that",
+                                    "magic adornments\nwill defend thee\nfrom many beings",
+                                    "who will attack\nyou with magic.\nYou may purchase",
+                                    "my Turquoise Ring\nor my Jade Amulet\nto raise your",
+                                    "defenses."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "d2e56a4c-f7f2-4c1f-bec3-4fedf4220905",
+                            "command": "EVENT_END"
+                        }
+                    ],
                     "startScript": [],
                     "updateScript": [],
                     "hit1Script": [],
@@ -9393,7 +9416,423 @@
                     "y": 13
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "7060b98c-cc9f-4e47-9397-84dd833ae66c",
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "4",
+                                "flag": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "86926418-4848-4310-8659-95f3bb3d183c",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You've already\nbought this item"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "6e69cc9e-f0db-4552-a578-ed1ff750d445",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "aedc50dc-7446-47d2-9567-2da1e2aaac48",
+                                        "command": "EVENT_SET_FALSE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__label": "initialise has bought option to false",
+                                            "__collapse": false,
+                                            "__comment": false
+                                        }
+                                    },
+                                    {
+                                        "id": "cfe00286-a4bb-4c8c-b31f-f5dc6ea47760",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "trueText": "Pay 20 rupees",
+                                            "falseText": "No way!"
+                                        }
+                                    },
+                                    {
+                                        "id": "98c9e7a2-f1fd-422a-8191-d6d0f47101bd",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "254f16e0-db38-4897-8531-5bfcfe7b83fa",
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "1",
+                                                        "operator": ">=",
+                                                        "comparator": 20,
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "912c7591-ca4e-4d06-ae2a-74d6a8d891a9",
+                                                                "command": "EVENT_GROUP",
+                                                                "args": {
+                                                                    "__label": "rupees - 20",
+                                                                    "__collapse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "f2c1ce55-ae2f-40ed-8e89-11d7785ba479",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 5",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "e1d3fd7c-772f-49ff-804d-99a40b85a3e7",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "106060d6-0f9b-455b-86e4-263525395b63",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "965e9f23-1c2b-4527-9e47-63160cf1fb7d",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "1780e69f-6b94-4271-868f-da2bd2eaa588",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "0bf0e09c-07ed-4fcc-9813-f4d93b9381b6",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "e8895b5c-1acc-4bbd-8ac5-f3ee65c08a9e",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "35d31d9c-2ef0-44da-9693-1e0496030f5a",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 5",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "7fbe6502-6755-4f6a-aff8-c6b4764e9371",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "ac6f8fc6-d477-4753-bd65-02f1bb903a11",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "3566b617-f5b6-4802-b8ed-e75990abc0d1",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "1f670d6d-23c0-4758-a3e5-2f90026626f6",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "8ebdd0e9-2936-40a4-bc68-736f3a2880b9",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "3db00cb0-00f5-47d0-966a-feaef048ff36",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "872e749d-d407-4a8f-b110-4b30dc13bc2d",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 5",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "917e5a67-ae70-42b9-b5ef-aa9a252dde52",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "5d59faad-1abc-454a-9d71-acdbada9c536",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "56bad422-7014-4ee6-aa81-d32e0c135896",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "8d466aa9-61b7-426f-85b7-494eb645535c",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "5e4d86e3-c122-4c2c-a48f-3d47f1889827",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "35c98c2c-1d5e-43b0-a168-65795e71c244",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "7034c1fb-f363-41e3-9866-237789d744c6",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 5",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "ef31e100-a340-4a0c-a1cf-63c50dd4eff3",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "e4a30697-695e-4e0c-bd5a-e98b459269ee",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "0a624535-29f9-4a1e-9427-0fc4742c2fdd",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "c784bad9-9fb8-4582-a022-eadf2dbf9565",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "61067fc7-d40a-48c6-ac48-8d379915ba49",
+                                                                                        "command": "EVENT_DEC_VALUE",
+                                                                                        "args": {
+                                                                                            "variable": "1",
+                                                                                            "__collapse": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "05883519-bc83-4d52-ada4-1ce265a9d4bc",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "c37aca87-e938-47f7-a05e-2bb86db783b3",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e17f0977-19fc-453f-8b75-fd6119fa5cad",
+                                                                "command": "EVENT_ACTOR_INVOKE",
+                                                                "args": {
+                                                                    "actorId": "23c77ed8-696b-4762-a01c-5a4f47bebe7c",
+                                                                    "__label": "update rupee counter UI",
+                                                                    "__collapse": false
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "ed34b9bd-9a93-4f2f-b09e-9cdd14bf08f4",
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "player",
+                                                                    "emoteId": "2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "b690bb9c-a3d8-4984-b9a8-a4a6c5909f8d",
+                                                                "command": "EVENT_ACTOR_HIDE",
+                                                                "args": {
+                                                                    "actorId": "0e1a2c5f-e717-40ad-92eb-e1b22b846388"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "151d0e15-5738-4a84-a46d-c36221918f19",
+                                                                "command": "EVENT_ADD_FLAGS",
+                                                                "args": {
+                                                                    "variable": "4",
+                                                                    "flag1": true,
+                                                                    "flag2": false,
+                                                                    "flag3": false,
+                                                                    "flag4": false,
+                                                                    "flag5": false,
+                                                                    "flag6": false,
+                                                                    "flag7": false,
+                                                                    "flag8": false
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "a4ae56f2-f962-4869-8d78-d8bf83de4283",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "A wise choice for\nsetting out!",
+                                                                        "Oh, come and see\nme again!"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "aef3d7dc-1173-4fca-bb25-ecdfe043d044",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "a6a165cf-a728-4b35-b244-8297ef110a27",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Sorry, you\ndon't have\nenough rupees"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "75178d84-90bf-40f6-8fcc-ec9f50e40077",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2148d7f3-c69b-485a-9738-0f91265a4a71",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "dcd57155-6f40-40b7-9e20-ffeb99d25b36",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "948108cb-cc20-4b14-86a1-42a6c57a411d",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "2fca71f6-8968-4bf0-bb14-ec86bb143b2e",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "46bab2ba-6e5e-45db-9e78-48fc6c5d56e7",
+                    "x": 4,
+                    "y": 9,
+                    "width": 2,
+                    "height": 1
+                }
+            ]
         }
     ],
     "backgrounds": [
@@ -9406,7 +9845,7 @@
             "imageHeight": 144,
             "filename": "great-wimbich-shop-interior.png",
             "inode": "2533274791724188",
-            "_v": 1615043443037
+            "_v": 1615116488730
         },
         {
             "id": "4a6aa148-bbe3-4af6-a55a-8b526b873460",
@@ -9417,7 +9856,7 @@
             "imageHeight": 144,
             "filename": "harp-cave.png",
             "inode": "844424931460618",
-            "_v": 1615043443037
+            "_v": 1615116488730
         },
         {
             "id": "7b2d44b0-5f6e-4a46-92a0-9cec15775313",
@@ -9428,7 +9867,7 @@
             "imageHeight": 144,
             "filename": "inventory.png",
             "inode": "2533274791718599",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "cad5f0c7-31e9-4a57-b9c3-be874cbfb63f",
@@ -9439,7 +9878,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-1.png",
             "inode": "3940649675277432",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "6b335f84-c5d1-4cb5-867c-4f76c58fd982",
@@ -9450,7 +9889,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-2.png",
             "inode": "844424931460617",
-            "_v": 1615043443038
+            "_v": 1615116488694
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -9461,7 +9900,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "2251799814457895",
-            "_v": 1615043443038
+            "_v": 1615116488730
         }
     ],
     "spriteSheets": [
@@ -9472,7 +9911,7 @@
             "type": "static",
             "filename": "book.png",
             "inode": "844424931460305",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "808cf60c-ed6a-4b07-b231-c5f3c6628085",
@@ -9481,7 +9920,7 @@
             "type": "animated",
             "filename": "collectable.png",
             "inode": "2251799815007896",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "b74638c5-5834-4b61-9bb8-ce12abb69ad1",
@@ -9490,7 +9929,7 @@
             "type": "static",
             "filename": "cursor-active.png",
             "inode": "1125899908170975",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "e6ddd9e0-f5ab-4269-b531-11cadbb3db24",
@@ -9499,7 +9938,7 @@
             "type": "animated",
             "filename": "cursor.png",
             "inode": "1407374884881614",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "38050e64-8d64-4723-9410-94e87ecda065",
@@ -9508,7 +9947,7 @@
             "type": "actor_animated",
             "filename": "darknut.png",
             "inode": "1407374884875935",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "07e0a3fd-8d7d-432a-a1e0-515e652d621c",
@@ -9517,7 +9956,7 @@
             "type": "static",
             "filename": "firerod.png",
             "inode": "1407374884881616",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "bbcaf1f3-b531-4a36-b978-37f17c8617f1",
@@ -9526,7 +9965,7 @@
             "type": "animated",
             "filename": "heart.png",
             "inode": "1688849861592296",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "61badb41-e983-4e6f-bb34-0127f556af81",
@@ -9535,7 +9974,7 @@
             "type": "static",
             "filename": "jade-amulet-spell.png",
             "inode": "3096224745241000",
-            "_v": 1615047486968
+            "_v": 1615116488730
         },
         {
             "id": "f4896d00-4de2-4ce0-8c9b-aade35e63d4d",
@@ -9544,7 +9983,7 @@
             "type": "static",
             "filename": "jade-amulet.png",
             "inode": "1125899908171072",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "765b949f-3993-4811-ba02-ef87c12b0459",
@@ -9553,7 +9992,7 @@
             "type": "actor",
             "filename": "noise-spell.png",
             "inode": "844424931555754",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "72245d42-5887-4444-997c-376fe5ad4083",
@@ -9562,7 +10001,7 @@
             "type": "animated",
             "filename": "numbers.png",
             "inode": "16044073673280052",
-            "_v": 1615043443038
+            "_v": 1615116488733
         },
         {
             "id": "bb7fc0c5-bc73-42af-8ce0-a787fd1bb239",
@@ -9571,7 +10010,7 @@
             "type": "static",
             "filename": "rings-of-fire-spell.png",
             "inode": "1970324838398379",
-            "_v": 1615054980829
+            "_v": 1615116488730
         },
         {
             "id": "b1a2c292-4aea-41b1-9f05-f2304aaeabe7",
@@ -9580,7 +10019,7 @@
             "type": "animated",
             "filename": "rings-of-fire.png",
             "inode": "844424931460403",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "8207b9e5-9fe9-46cc-be72-1adfc78b1cbe",
@@ -9589,7 +10028,7 @@
             "type": "animated",
             "filename": "shop-keeper.png",
             "inode": "2814749768429035",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "8d466eff-597f-4920-b8ba-10131416400e",
@@ -9598,7 +10037,7 @@
             "type": "static",
             "filename": "surf-harp.png",
             "inode": "1407374884881578",
-            "_v": 1615043443038
+            "_v": 1615116488730
         },
         {
             "id": "0362f014-b9ec-4569-93a6-3bddf0f85023",
@@ -9607,7 +10046,7 @@
             "type": "static",
             "filename": "turquoise-ring-spell.png",
             "inode": "562949954845097",
-            "_v": 1615046344714
+            "_v": 1615116488730
         },
         {
             "id": "ea11e684-80e7-42c5-8394-8a48947087a6",
@@ -9616,7 +10055,7 @@
             "type": "static",
             "filename": "turquoise-ring.png",
             "inode": "1970324838302967",
-            "_v": 1615043443046
+            "_v": 1615116488733
         },
         {
             "id": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
@@ -9625,7 +10064,7 @@
             "type": "actor",
             "filename": "wand.png",
             "inode": "1407374884875948",
-            "_v": 1615043443045
+            "_v": 1615116488732
         },
         {
             "id": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab",
@@ -9634,7 +10073,7 @@
             "type": "actor_animated",
             "filename": "zelda.png",
             "inode": "1970324838297064",
-            "_v": 1615043443045
+            "_v": 1615116488730
         }
     ],
     "palettes": [
@@ -9783,7 +10222,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "2251799814457897",
-            "_v": 1615043442853
+            "_v": 1615116488466
         }
     ],
     "variables": [
@@ -9958,6 +10397,14 @@
         {
             "id": "23c77ed8-696b-4762-a01c-5a4f47bebe7c__L0",
             "name": "Rupee Value"
+        },
+        {
+            "id": "46bab2ba-6e5e-45db-9e78-48fc6c5d56e7__L0",
+            "name": "has bought"
+        },
+        {
+            "id": "4",
+            "name": "Purchasable"
         }
     ],
     "settings": {
@@ -9967,7 +10414,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 815,
-        "worldScrollY": 271,
+        "worldScrollY": 0,
         "zoom": 250,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [

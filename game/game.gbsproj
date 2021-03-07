@@ -4135,7 +4135,7 @@
                         "variable": "1",
                         "value": {
                             "type": "number",
-                            "value": 21
+                            "value": 130
                         },
                         "__collapse": false,
                         "__label": "Init Rupees"
@@ -9831,6 +9831,1397 @@
                     "y": 9,
                     "width": 2,
                     "height": 1
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "3e10b019-83ee-4aec-90de-406b7b5a8b2f",
+                            "command": "EVENT_IF_FLAGS_COMPARE",
+                            "args": {
+                                "variable": "4",
+                                "flag": "1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "79f0382e-bc36-4d11-b41a-61e5d17c9b55",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You've already\nbought this item"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "7182a54c-0af3-41be-b56e-6187f9ac2708",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "7cfc616c-0f0b-4432-9e48-af12a84856da",
+                                        "command": "EVENT_SET_FALSE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__label": "initialise has bought option to false",
+                                            "__collapse": false,
+                                            "__comment": false
+                                        }
+                                    },
+                                    {
+                                        "id": "f423dfb9-5c26-4a26-a226-04a4498c69ea",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "trueText": "Pay 100 rupees",
+                                            "falseText": "No way!"
+                                        }
+                                    },
+                                    {
+                                        "id": "c6cbd9e7-77a8-4f69-863a-7c7787ece703",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false,
+                                            "__disableElse": true,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "24bc534c-881b-4b1c-a252-8d91bd58f718",
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "1",
+                                                        "operator": ">=",
+                                                        "comparator": 100,
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "95dd4a82-c03c-4b7d-9831-86485ddf9a75",
+                                                                "command": "EVENT_GROUP",
+                                                                "args": {
+                                                                    "__label": "rupees - 50",
+                                                                    "__collapse": true
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "31c18bc5-a0fb-4d8a-840e-abbc506d2b4e",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 25",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "61ffac3b-668d-4ed0-8b23-a6b2822a9e9a",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "ff4e62ac-7fd2-4190-b729-366d16ef959a",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "14910f0b-7d74-4339-b18b-f530456eb266",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "5237b690-aec2-4f90-86dc-f3651b06b17d",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b4980c48-0ad4-4a00-a9e3-22fb717789ce",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7e3b5c7d-82ec-4059-904e-9b904d6f1f1c",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b9b64f62-9516-4e7b-8aa8-3cb81b8608a3",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "d00e781b-8469-4d82-9e5d-2b7916a59598",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "859cf42b-b6c9-4af7-8057-2199ec9033c1",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "ab878d0e-c151-4d22-a17f-9db780758f1d",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "1dc65ceb-a036-4987-b1c8-8eba43eb1be7",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7318d32f-0a27-4279-bd89-86de99e95be4",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "12ca241c-e244-48ce-9d6e-74e03c9419c5",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "d0ddce6b-bb5d-4438-bab7-c58a72f4ce1e",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "29553324-e17d-4c10-94b7-545217357d73",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "6e2cf3ea-36d0-4f47-8e59-d6122bce9b5f",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "62d06871-4f4f-4675-84a6-6ca75b2163bd",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "9df536eb-49f1-4ab7-8fe4-529d475023a4",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "43d87774-7d57-44da-9718-f14240603669",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "dcb29748-b859-4563-a7f8-08ad26464cf2",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "fdb5699e-5264-4be3-8527-53801617dc33",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "ae523114-52ff-4e03-953f-6d549f12333f",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "cdad51cb-81e5-4e86-a6d6-112be250bd77",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "4977cc26-80a8-44a3-bdde-3eb55edbb78f",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "71e23659-c030-44b7-a270-c371072239a4",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "adf92b09-91d7-4e3f-9f54-e72e99c89614",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "afb75aa5-7b8e-454a-a2c4-4945dfdf762e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "945a338d-773b-422a-9500-21e82063cd3b",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "2c14c491-c477-4041-9fbb-53f5ae53f708",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "d7ab87a8-18d9-4095-872d-f48fcc9a0c1d",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "8e9553aa-3def-415a-9ae3-9d2ef8f5926c",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "de796cbd-045d-4141-9d82-d1a922c2bd0d",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "528352eb-28c9-4c8b-9e9e-db8516a7b49b",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "6c697e73-62eb-4ad2-8895-4a1181efa76a",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "01e8d217-9a90-4dc4-9ff8-3004a63afc8f",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "007dcf71-c50f-4b89-b6d8-2d017427a816",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "15a84c1e-57da-4310-85c8-24f1250ed5a1",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 25",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "f2a8f315-fa7a-4a96-b02d-e7c704d364fb",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "e03203b3-bbb1-429b-b007-4426a3e5ffab",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "f9a3761d-47c8-4a9a-8511-06652e14babf",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "e6978a7e-3678-4bd5-b9ec-c7a23801f1ef",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a70fc609-d2c6-451c-b8f6-93ca44610a30",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "1eff153f-5a83-49cc-ab50-472c619c61eb",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c0b4b88d-7dbc-4235-88d5-31302c2eb6e1",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "cfc63c16-0509-4848-9a11-932b15c369cc",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "7d047cda-9b31-4b12-a282-f3b45a46ec07",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "96b1d167-4816-4686-9f34-5c76b615357a",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "af3b850a-2b8b-415e-b1eb-785de51e4ce5",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "ece681ed-ac4c-4c9a-a335-cadf8d8d2ece",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "faf1f32d-f2f8-40cb-9f0f-00723b7e4de8",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "70674dd1-a7f3-47be-aaa4-9449bbabd359",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "e641548c-a7d0-4754-aaa9-a548f9cb8042",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "23f270bc-fb9e-4ab5-b002-1f0f091cc315",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "6ee606a1-b1a0-4be5-945d-8fcd57846ecd",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "68f217c9-5143-4f71-bfdf-3a5d0ea0dfe5",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "0ba7249f-e525-4f39-ba79-281b7d5dec15",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "ac6ebc02-53fd-44ba-94b6-9dfcf6996855",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "3edce602-ade2-48e8-9866-8c47069e87ec",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "dc399eae-3ffb-44b2-8f9a-db846e9c1df3",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "458cfbf5-0cae-4d6d-aabf-77ee76f91904",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "fe598ab1-32c4-4cbe-b175-4919605e87d5",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "775dfe30-3713-496f-90ba-4731be3aab0c",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "65c12d09-4b83-44be-bb6b-2d16f7923177",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "cfa4c0a5-97f5-442c-b053-e95d391c2235",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "f0f36ac6-6ae7-4b73-8039-bac1fc18128b",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "7486f719-b098-4157-9708-82974bec2407",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "96b5fab5-baa7-4856-b133-4de657a42516",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "53d6e165-a351-40b7-9787-24b3a62e74ae",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "95423e42-4405-4771-92e5-bcc199346859",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "0be04f84-0286-43ab-a63c-5561ba154579",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "cde59b2a-0237-4b1b-8501-e31fc45c3e79",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "efaa0d91-897a-4dd0-9601-6624868c43fb",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "bbf30975-3bc4-4ebc-b085-488bcedf747b",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "c027209f-dabb-4e27-944a-4cfe3f3252cd",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "8a988612-24d4-4c45-9d1b-5ec8eb34b956",
+                                                                "command": "EVENT_GROUP",
+                                                                "args": {
+                                                                    "__label": "rupees - 50",
+                                                                    "__collapse": true
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "cf5d4d33-704f-4b13-8edd-78807d0fb5e7",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 25",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "ebe01fc9-8f64-4fff-ab31-ea628cfb3f27",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "eb94c778-72c5-4266-8975-5b74312ea5bd",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "9e4a5793-0128-456e-9a2c-de480a9feb08",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "ea10264d-a327-4c8f-95cb-641b28866685",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "76a214bf-8f8e-4918-bcc5-7a4e4c1945cb",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c46852c6-e51c-4807-a41e-dc4f4f666484",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "16bf1ef8-b0cb-453f-9d63-fc4e0efd893c",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "ea9732b0-dfba-47c2-856b-fec5fb217308",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "127cef44-7c73-409a-ba2e-56454b2f26e7",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "e94103c7-5583-4be3-9cdc-81ce5739a40e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "bd923dab-e88d-404d-abe8-33909c6b2f8e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "9df16cf2-ca5c-4bd7-8d1a-259acccba712",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "78a1637a-ea9c-422d-8992-d062045988a8",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c63aa366-43fc-4ea2-80af-c38e75ec0423",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "d648ddd6-4708-4d0a-8665-cafbe1c19e6e",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "a5e2a8ac-b3a2-47d9-95bb-64d0d83ad039",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "68204d6f-ff02-494f-a6a0-d4a202ae751e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "66ce0283-6d06-4f61-a1ad-e17972b75bf6",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "24a0cce1-3faa-4f18-a1e7-98a7a07501d9",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "92e6d0ea-2dc7-47d0-9745-d7ee4e55c49b",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "bbc48cb3-fe2f-4488-af28-385c5f5af417",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "bd6d20ab-4b3f-47a5-9dc0-bbbb6aae59e3",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "82d7dc32-d4b0-41a6-95ac-48c3d9e9cc84",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7e9b4845-896e-4bab-a9e5-5ffbaeca4c98",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "fef8f1a7-04ef-408b-902c-413ec46043d0",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "42032c21-20c2-4501-be0b-b40326671e0e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "5f2fcfc3-60bc-4f7b-9c63-a248c6911548",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a5d111b5-8eb6-4ef5-8a91-da14579fe25f",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "415719ab-c1fd-4e37-8bd4-55619ab2b240",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "221f74c0-49b0-4534-878c-5b62020c09fe",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "d697f95c-a91c-4a5c-bebb-7e5d46f4430d",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7f3911c4-2aef-49b0-83da-2077953d267c",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "348cb5fb-2414-433d-be4e-c05c3539c7fe",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b5b23101-1bea-4e83-a168-073e088a6a4b",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "e1b65fed-0290-46fd-b19b-067ee084cac4",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "ca6d4a16-2a4d-46da-88ef-cee455822355",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "6b29dcf7-ace8-4e33-bdc5-a0e6b5fba98c",
+                                                                            "command": "EVENT_GROUP",
+                                                                            "args": {
+                                                                                "__label": "rupees - 25",
+                                                                                "__collapse": true
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "48948740-b4ce-4cfc-b882-30723743c1da",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "d9cb91fd-a20b-4526-b177-8b67648e17ea",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c6978093-e8ed-44a9-99bd-35e1eb7b562e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "51edb753-837b-439a-bb8d-9fa16ab398e3",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c314ea8d-21f4-4f0d-a765-fe0e029b587b",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "8a0d3c63-6c11-4dd8-b87f-d322db53e771",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "de039285-9cda-44c4-a8fa-e3469cd17c68",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "773a29bd-741a-42c5-a90f-d61874202b87",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "c3d398af-d3ec-46d7-91e0-db5fbc86ca96",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "cf87a7ae-31e4-4468-b601-32e0d4f8c280",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "2ff38820-fbba-4611-8013-7d08a1d6048c",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c8773f11-e08b-4db3-b62f-e2f2f6946bc0",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "636749a7-5649-4fd4-b1b2-d48f4b561e5d",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "db7d840c-e505-48d7-ac54-ee71e35919a8",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "0449001d-30dd-4193-99f0-80d738239b91",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "c22ff4da-2488-43d9-902d-53de5011af26",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "efa31929-6a2a-4db8-b4fb-2cf238ed10d6",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a3866d8e-346e-46b5-afb3-64675b3ef348",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a43d9c5d-347a-408a-9527-932f079d2ceb",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a99c2da8-406a-44d4-bb0d-d630ecd38e92",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "17f69c83-452b-4756-9fb3-62f2ed512a60",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "fe5f33b2-7326-43a5-aa8f-c739a13ced86",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "99f5ecb8-194a-425d-80f9-ed5c0fa92c55",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "2f31ef49-9e21-4d50-b91b-09370a042a68",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "d07b16ee-c232-49a3-9f82-ab625fda492f",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "e7743f9c-910b-4649-9412-d90442bed22e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "ee60268b-38dc-4c89-9db7-3dce69006f51",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b76d6eb1-37b8-4481-b016-b03b9edbbde6",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "6225d337-09ee-459e-a5aa-d4c7c4dff609",
+                                                                                        "command": "EVENT_GROUP",
+                                                                                        "args": {
+                                                                                            "__label": "rupees - 5",
+                                                                                            "__collapse": true
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "1e93a816-a973-410e-98f0-619b0a715b25",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b7af48ab-2c91-4fe6-acbb-25cdfab21204",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "47fded9d-a5fa-48a1-9fde-c173b56eaf7e",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "39e26f93-97e9-4a81-bb9a-2ccd71e960b3",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7bdf98dc-e913-4a45-88bc-a0188324ed40",
+                                                                                                    "command": "EVENT_DEC_VALUE",
+                                                                                                    "args": {
+                                                                                                        "variable": "1",
+                                                                                                        "__collapse": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "0d1764ee-af97-4368-9eda-b2373c7f653f",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "d00513d0-e9c2-4577-926c-645588d36348",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "4c486498-a2ad-4c71-a510-971f82bbd43b",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "11fb4b5f-7529-476b-855d-e0e0d53588aa",
+                                                                "command": "EVENT_ACTOR_INVOKE",
+                                                                "args": {
+                                                                    "actorId": "23c77ed8-696b-4762-a01c-5a4f47bebe7c",
+                                                                    "__label": "update rupee counter UI",
+                                                                    "__collapse": false
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "8cf26aa7-5b7b-48fc-a4f5-ea23a5a416d6",
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "player",
+                                                                    "emoteId": "2"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "0b06762b-8cd6-4be7-b69c-227c7183db80",
+                                                                "command": "EVENT_ACTOR_HIDE",
+                                                                "args": {
+                                                                    "actorId": "e574199c-6c99-44aa-9c86-5297d6bce69c"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "16c1b8a9-bde0-4aa5-b3fb-2a6090be1f2a",
+                                                                "command": "EVENT_ADD_FLAGS",
+                                                                "args": {
+                                                                    "variable": "4",
+                                                                    "flag1": false,
+                                                                    "flag2": true,
+                                                                    "flag3": false,
+                                                                    "flag4": false,
+                                                                    "flag5": false,
+                                                                    "flag6": false,
+                                                                    "flag7": false,
+                                                                    "flag8": false
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "452d76d7-3278-4093-ab44-7061b7664f94",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "A wise choice for\nsetting out!",
+                                                                        "Oh, come and see\nme again!"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "b09c3bb8-b94a-46a9-91d8-a26634cb7650",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "33835512-c29d-4d57-b76f-2e9f794b63c2",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Sorry, you\ndon't have\nenough rupees"
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "bf286041-2b38-4e53-b951-e24e4acd192b",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c58b2813-1819-4a58-8fd2-f696dbeda29e",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "167ec3c5-2e7b-4f22-8eed-6d815337b362",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "67c46766-3ab6-4357-8002-4c392d698ccf",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "c5b96dfb-6bed-4474-9b7d-877746ff0b07",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "cf1e37c0-3365-4a06-83e9-594fa5415767",
+                    "x": 9,
+                    "y": 9,
+                    "width": 2,
+                    "height": 1
                 }
             ]
         }
@@ -10405,6 +11796,10 @@
         {
             "id": "4",
             "name": "Purchasable"
+        },
+        {
+            "id": "cf1e37c0-3365-4a06-83e9-594fa5415767__L0",
+            "name": "has bought"
         }
     ],
     "settings": {

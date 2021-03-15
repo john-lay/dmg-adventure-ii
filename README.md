@@ -15,12 +15,19 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 2 represents the enemy dropping a heart)
   * (Flag 3 is the Noise spell)
   * (Flag 4 is the Harp)
-  * (Flag 5 is ???)
-  * (Flag 6 is ???)
-  * (Flag 7 is ???)
-  * (Flag 8 is ???)
+  * (Flag 5 is feather)
+  * (Flag 6 is flute)
+  * (Flag 7 is pyros)
+  * (Flag 8 is broadsword)
 * `$03$: Variable 003` Equipped - `byte`.
-  * (Flag 1 represents Zelda has the noise spell equipped)
+  * (Flag 1 represents Zelda has the wand equipped)
+  * (Flag 2 represents Zelda has the Noise spell equipped)
+  * (Flag 3 represents Zelda has the Turquoise Ring spell equipped)
+  * (Flag 4 represents Zelda has the Jade Amulet spell equipped)
+  * (Flag 5 represents Zelda has the feather spell equipped)
+  * (Flag 6 represents Zelda has the pyros spell equipped)
+  * (Flag 7 represents Zelda has the broadsword equipped)
+  * (Flag 8 represents Zelda has the Rings of Fire equipped)
 * `$04$: Variable 004` Purchasable - `byte`.
   * (Flag 1 is the Turquoise Ring)
   * (Flag 2 is the Jade Amulet)
@@ -30,7 +37,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 6 is ???)
   * (Flag 7 is ???)
   * (Flag 8 is ???)
-
+  
 # Dev Notes
 ## Encapsulation
 The best way to enable reusable code components is to encapsulate the logic for a particular feature into a script.

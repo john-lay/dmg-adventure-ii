@@ -383,7 +383,7 @@
                         ],
                         "persist": true,
                         "__scriptTabs": "press",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "children": {
                         "true": [
@@ -751,26 +751,6 @@
                     "children": {
                         "true": [
                             {
-                                "id": "8087eb90-d9aa-4938-b5d1-43cbb489c3f6",
-                                "command": "EVENT_ACTOR_INVOKE",
-                                "args": {
-                                    "actorId": "fb618cd5-fd98-4a07-a000-464298edf8ef",
-                                    "__label": "update rupee counter UI",
-                                    "__collapse": true,
-                                    "__comment": true
-                                }
-                            },
-                            {
-                                "id": "1d81a155-9ef2-4307-b149-39322e512d96",
-                                "command": "EVENT_ACTOR_INVOKE",
-                                "args": {
-                                    "actorId": "af7ad4fc-066e-480b-a848-c37007fb5ac9",
-                                    "__label": "update hearts UI",
-                                    "__collapse": true,
-                                    "__comment": true
-                                }
-                            },
-                            {
                                 "id": "2a00824f-1c3c-41ea-b7dd-8bd029c6d611",
                                 "command": "EVENT_CLEAR_FLAGS",
                                 "args": {
@@ -784,7 +764,7 @@
                                     "flag7": false,
                                     "flag8": false,
                                     "__label": "clear collectable flags",
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -950,7 +930,7 @@
                             "id": "6e77e1e9-ce95-4618-9d77-e9d357be1c65",
                             "command": "EVENT_COMMENT",
                             "args": {
-                                "text": "\"Push away\" prevents Zelda from sometimes taking double during a collision",
+                                "text": "\"Push away\" prevents Zelda from sometimes taking double damage during a collision",
                                 "__collapse": true
                             }
                         },
@@ -3453,7 +3433,7 @@
                             "id": "6c71be08-de6a-480d-9ea9-98dc55f57bc9",
                             "command": "EVENT_COMMENT",
                             "args": {
-                                "text": "\"Push away\" prevents Zelda from sometimes taking double during a collision",
+                                "text": "\"Push away\" prevents Zelda from sometimes taking double damage during a collision",
                                 "__collapse": true
                             }
                         },
@@ -16964,7 +16944,7 @@
             "imageHeight": 144,
             "filename": "great-wimbich-shop-interior.png",
             "inode": "2533274791724188",
-            "_v": 1615801792026
+            "_v": 1615885865657
         },
         {
             "id": "4a6aa148-bbe3-4af6-a55a-8b526b873460",
@@ -16975,7 +16955,7 @@
             "imageHeight": 144,
             "filename": "harp-cave.png",
             "inode": "844424931460618",
-            "_v": 1615801792026
+            "_v": 1615885865657
         },
         {
             "id": "7b2d44b0-5f6e-4a46-92a0-9cec15775313",
@@ -16986,7 +16966,7 @@
             "imageHeight": 144,
             "filename": "inventory.png",
             "inode": "3940649674721890",
-            "_v": 1615801792026
+            "_v": 1615885865673
         },
         {
             "id": "cad5f0c7-31e9-4a57-b9c3-be874cbfb63f",
@@ -16997,7 +16977,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-1.png",
             "inode": "3940649675277432",
-            "_v": 1615801792025
+            "_v": 1615885865673
         },
         {
             "id": "6b335f84-c5d1-4cb5-867c-4f76c58fd982",
@@ -17008,7 +16988,7 @@
             "imageHeight": 144,
             "filename": "moblin-inn-north-2.png",
             "inode": "844424931460617",
-            "_v": 1615801792026
+            "_v": 1615885865657
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -17019,7 +16999,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "2251799814457895",
-            "_v": 1615801792026
+            "_v": 1615885865673
         }
     ],
     "spriteSheets": [
@@ -17030,7 +17010,7 @@
             "type": "static",
             "filename": "axe.png",
             "inode": "1970324838398801",
-            "_v": 1615801792026
+            "_v": 1615885865673
         },
         {
             "id": "adbab1a8-3702-4391-bfa5-9e64221c9f2c",
@@ -17039,7 +17019,7 @@
             "type": "static",
             "filename": "bone.png",
             "inode": "2814749768530764",
-            "_v": 1615801792026
+            "_v": 1615885865673
         },
         {
             "id": "3a57757f-ac5f-4e1d-aff0-f9daa7161673",
@@ -17048,7 +17028,7 @@
             "type": "static",
             "filename": "book.png",
             "inode": "844424931460305",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "808cf60c-ed6a-4b07-b231-c5f3c6628085",
@@ -17057,7 +17037,7 @@
             "type": "animated",
             "filename": "collectable.png",
             "inode": "2251799815007896",
-            "_v": 1615801792026
+            "_v": 1615885865673
         },
         {
             "id": "f1d15804-215f-452c-acf6-cdc916d00742",
@@ -17066,7 +17046,7 @@
             "type": "animated",
             "filename": "cursor-active.png",
             "inode": "3659174698011248",
-            "_v": 1615837698424
+            "_v": 1615885865673
         },
         {
             "id": "e6ddd9e0-f5ab-4269-b531-11cadbb3db24",
@@ -17075,7 +17055,7 @@
             "type": "animated",
             "filename": "cursor.png",
             "inode": "1407374884881614",
-            "_v": 1615801792026
+            "_v": 1615885865673
         },
         {
             "id": "aa3a3053-7ba0-4b5a-b434-c0fff9f3a7ac",
@@ -17084,7 +17064,7 @@
             "type": "static",
             "filename": "dagger.png",
             "inode": "5066549581564534",
-            "_v": 1615816556997
+            "_v": 1615885865674
         },
         {
             "id": "38050e64-8d64-4723-9410-94e87ecda065",
@@ -17093,7 +17073,7 @@
             "type": "actor_animated",
             "filename": "darknut.png",
             "inode": "1407374884875935",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "07e0a3fd-8d7d-432a-a1e0-515e652d621c",
@@ -17102,7 +17082,7 @@
             "type": "static",
             "filename": "firerod.png",
             "inode": "1407374884881616",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "bbcaf1f3-b531-4a36-b978-37f17c8617f1",
@@ -17111,7 +17091,7 @@
             "type": "animated",
             "filename": "heart.png",
             "inode": "1688849861592296",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "61badb41-e983-4e6f-bb34-0127f556af81",
@@ -17120,7 +17100,7 @@
             "type": "static",
             "filename": "jade-amulet-spell.png",
             "inode": "3096224745241000",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "f4896d00-4de2-4ce0-8c9b-aade35e63d4d",
@@ -17129,7 +17109,7 @@
             "type": "static",
             "filename": "jade-amulet.png",
             "inode": "1125899908171072",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "765b949f-3993-4811-ba02-ef87c12b0459",
@@ -17138,7 +17118,7 @@
             "type": "actor",
             "filename": "noise-spell.png",
             "inode": "844424931555754",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "72245d42-5887-4444-997c-376fe5ad4083",
@@ -17147,7 +17127,7 @@
             "type": "animated",
             "filename": "numbers.png",
             "inode": "16044073673280052",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "84179a90-c9c4-4273-928f-7bb1cffe22a9",
@@ -17156,7 +17136,7 @@
             "type": "static",
             "filename": "ocarina.png",
             "inode": "1688849861688148",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "4f940ea9-b403-4bc9-b91f-1472ff8bc431",
@@ -17165,16 +17145,7 @@
             "type": "static",
             "filename": "orb.png",
             "inode": "1970324838398799",
-            "_v": 1615801792026
-        },
-        {
-            "id": "14c5034e-8ac5-484c-be02-b2834b60e53a",
-            "name": "quest-axe-dagger",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "quest-axe-dagger.png",
-            "inode": "3096224745227051",
-            "_v": 1615820848838
+            "_v": 1615885865674
         },
         {
             "id": "8a1ac52d-c55e-4d3b-8510-47314c15eaef",
@@ -17183,7 +17154,7 @@
             "type": "actor",
             "filename": "quest-bomb-feather.png",
             "inode": "3096224744589945",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "4c90495a-6e96-406e-a862-ca1edb4e82f6",
@@ -17192,25 +17163,7 @@
             "type": "actor",
             "filename": "quest-bone-flute.png",
             "inode": "1688849861679076",
-            "_v": 1615836605185
-        },
-        {
-            "id": "56bb17d1-75ad-4e06-bde7-2e43b7a3512e",
-            "name": "quest-bone-orb",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "quest-bone-orb.png",
-            "inode": "2251799815100383",
-            "_v": 1615811175233
-        },
-        {
-            "id": "2e4b1701-fc2d-497c-bdeb-211f342910b1",
-            "name": "quest-candle-orb",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "quest-candle-orb.png",
-            "inode": "3659174698653522",
-            "_v": 1615822754122
+            "_v": 1615885865674
         },
         {
             "id": "3438c597-7d1d-4465-95b0-9d170a3f6d60",
@@ -17219,16 +17172,7 @@
             "type": "actor",
             "filename": "quest-candle-potion.png",
             "inode": "3377699721942865",
-            "_v": 1615832139661
-        },
-        {
-            "id": "a50de204-665c-4435-941a-7517930ea1a4",
-            "name": "quest-harp-flute",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "quest-harp-flute.png",
-            "inode": "4222124652074839",
-            "_v": 1615811670701
+            "_v": 1615885865674
         },
         {
             "id": "40b09736-656a-452a-a75b-7d911f2ca64c",
@@ -17237,16 +17181,7 @@
             "type": "actor",
             "filename": "quest-key-orb.png",
             "inode": "1970324838389730",
-            "_v": 1615832245425
-        },
-        {
-            "id": "6d9294d8-9b82-4039-91fc-7968308493ec",
-            "name": "quest-key-potion",
-            "numFrames": 3,
-            "type": "actor",
-            "filename": "quest-key-potion.png",
-            "inode": "3377699721942869",
-            "_v": 1615807327940
+            "_v": 1615885865674
         },
         {
             "id": "25d52f3f-b2df-4981-9b32-8823aec4c1c9",
@@ -17255,7 +17190,7 @@
             "type": "actor",
             "filename": "quest-map-compass.png",
             "inode": "4785074604853805",
-            "_v": 1615802854224
+            "_v": 1615885865681
         },
         {
             "id": "4799250b-0259-48b1-9cef-61fae75dd551",
@@ -17264,7 +17199,7 @@
             "type": "static",
             "filename": "quest-noise.png",
             "inode": "1125899908266826",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "78cff5ce-0487-4c93-88e6-85c6a0a97164",
@@ -17273,7 +17208,7 @@
             "type": "actor",
             "filename": "quest-ring-necklace.png",
             "inode": "4222124651432547",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "adbf4b86-434a-4889-b535-1ab929b81cac",
@@ -17282,7 +17217,7 @@
             "type": "actor",
             "filename": "quest-sword-fire.png",
             "inode": "3377699721300602",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "4d70d9dc-6a4d-4318-b924-7f9b19897c41",
@@ -17291,7 +17226,7 @@
             "type": "static",
             "filename": "raft.png",
             "inode": "2814749768521552",
-            "_v": 1615822545294
+            "_v": 1615885865674
         },
         {
             "id": "bb7fc0c5-bc73-42af-8ce0-a787fd1bb239",
@@ -17300,7 +17235,7 @@
             "type": "static",
             "filename": "rings-of-fire-spell.png",
             "inode": "1970324838398379",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "b1a2c292-4aea-41b1-9f05-f2304aaeabe7",
@@ -17309,7 +17244,7 @@
             "type": "animated",
             "filename": "rings-of-fire.png",
             "inode": "844424931460403",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "8207b9e5-9fe9-46cc-be72-1adfc78b1cbe",
@@ -17318,7 +17253,7 @@
             "type": "animated",
             "filename": "shop-keeper.png",
             "inode": "2814749768429035",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "8d466eff-597f-4920-b8ba-10131416400e",
@@ -17327,7 +17262,7 @@
             "type": "static",
             "filename": "surf-harp.png",
             "inode": "1407374884881578",
-            "_v": 1615801792031
+            "_v": 1615885865674
         },
         {
             "id": "0362f014-b9ec-4569-93a6-3bddf0f85023",
@@ -17336,7 +17271,7 @@
             "type": "static",
             "filename": "turquoise-ring-spell.png",
             "inode": "562949954845097",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "ea11e684-80e7-42c5-8394-8a48947087a6",
@@ -17345,7 +17280,7 @@
             "type": "static",
             "filename": "turquoise-ring.png",
             "inode": "1970324838302967",
-            "_v": 1615801792026
+            "_v": 1615885865674
         },
         {
             "id": "a9207b3c-9e63-4ab0-97be-fc8d55c14043",
@@ -17354,7 +17289,7 @@
             "type": "actor",
             "filename": "wand.png",
             "inode": "1407374884875948",
-            "_v": 1615801792033
+            "_v": 1615885865681
         },
         {
             "id": "9fab7ecd-ab5a-41e6-9bf8-23f7f25fecab",
@@ -17363,7 +17298,7 @@
             "type": "actor_animated",
             "filename": "zelda.png",
             "inode": "1970324838297064",
-            "_v": 1615801792033
+            "_v": 1615885865678
         }
     ],
     "palettes": [
@@ -17512,7 +17447,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "2251799814457897",
-            "_v": 1615801791782
+            "_v": 1615885865450
         }
     ],
     "variables": [
@@ -17535,6 +17470,18 @@
         {
             "id": "4",
             "name": "Purchasable"
+        },
+        {
+            "id": "5",
+            "name": "Dungeon Items"
+        },
+        {
+            "id": "6",
+            "name": "Collectable II"
+        },
+        {
+            "id": "7",
+            "name": "Equipped II"
         },
         {
             "id": "f6717d38-39ec-4dfe-bd57-526db3c9329b__L0",
@@ -17703,18 +17650,6 @@
         {
             "id": "c26ac1aa-0b10-436b-b25d-ee95da5a6672__L0",
             "name": "has bought"
-        },
-        {
-            "id": "5",
-            "name": "Dungeon Items"
-        },
-        {
-            "id": "6",
-            "name": "Collectable II"
-        },
-        {
-            "id": "7",
-            "name": "Equipped II"
         }
     ],
     "settings": {
@@ -17724,7 +17659,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 877,
-        "worldScrollY": 1000,
+        "worldScrollY": 400,
         "zoom": 250,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [

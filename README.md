@@ -13,7 +13,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
 * `$02$: Variable 002` Scene Flags - `byte`.
   * (Flag 1 represents the enemy dropping a rupee)
   * (Flag 2 represents the enemy dropping a heart)
-  * (Flag 3 is ???))
+  * (Flag 3 represent the enemy dropped a rupee or a heart))
   * (Flag 4 is ???))
   * (Flag 5 is ???))
   * (Flag 6 is ???))

@@ -4247,14 +4247,72 @@
                                         }
                                     },
                                     {
-                                        "id": "53e10b02-e7ef-4efa-b0d8-d2fbee8cbc37",
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "id": "c9141448-43c0-4c74-a0ae-91af8139145f",
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
                                         "args": {
-                                            "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
+                                            "variable": "7",
+                                            "flag": "5",
+                                            "__collapseElse": false,
+                                            "__label": "Has potion"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "b4fb075f-bdbd-48a8-8d24-a63a02a6d406",
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": true,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "__label": "use potion"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "1990ea26-1498-4666-b7d1-d1b4c49a6c0a",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 4
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "68f9f56d-c867-4571-81bd-d68ef77310b9",
+                                                    "command": "EVENT_ACTOR_INVOKE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "93eb2db1-ad04-41e7-884f-f9f5013f888a",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "e3ef9f90-93c4-49cb-851b-cda82f74c083",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "567b0342-8d31-4314-b2df-49994e298b4e",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -4456,6 +4514,14 @@
                                                 "type": "number",
                                                 "value": 1
                                             }
+                                        }
+                                    },
+                                    {
+                                        "id": "bdfb7de7-917f-4cd5-a530-ff1305ffcbcf",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "8cf3092a-5588-4072-b2b3-d42cbf215ef6",
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -6677,7 +6743,7 @@
             "playerHit3Script": [],
             "id": "15ec055a-1ac0-4d00-903a-b2d03333a49e",
             "x": 854.644444444445,
-            "y": 3052.3111111111084,
+            "y": 3051.866666666664,
             "actors": [],
             "triggers": []
         },
@@ -13763,14 +13829,72 @@
                                         }
                                     },
                                     {
-                                        "id": "4b6b0cc2-110f-4cd2-a94e-da94ac249484",
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "id": "ce8234c3-05c3-49f4-92e3-593ee97a2e49",
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
                                         "args": {
-                                            "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
+                                            "variable": "7",
+                                            "flag": "5",
+                                            "__collapseElse": false,
+                                            "__label": "Has potion"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "ad73f894-5edd-4360-adf5-a56fc1becc73",
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": true,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "__label": "use potion"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "edb8cb9f-d6d5-4272-be33-fd649f5055c9",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 4
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c385ea5a-c8aa-441c-a3d7-fa95df8b922d",
+                                                    "command": "EVENT_ACTOR_INVOKE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ec630649-771c-4ba7-9be2-755e4d4217f8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "4b6b0cc2-110f-4cd2-a94e-da94ac249484",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b5c7a536-7d3d-4117-8d69-78ce28b17d52",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -13972,6 +14096,14 @@
                                                 "type": "number",
                                                 "value": 1
                                             }
+                                        }
+                                    },
+                                    {
+                                        "id": "613ad45d-93e1-460d-9e8c-99d88e740f08",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "7e0bfcff-396c-4cfa-8ba5-28e844de17ae",
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -18505,14 +18637,72 @@
                                         }
                                     },
                                     {
-                                        "id": "66d65c20-1de3-4c53-8f05-ac9b1c656d97",
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "id": "e3830042-7555-451e-b247-918985365582",
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
                                         "args": {
-                                            "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
+                                            "variable": "7",
+                                            "flag": "5",
+                                            "__collapseElse": false,
+                                            "__label": "Has potion"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "d909425e-0291-4b83-9434-c6d03d2e8225",
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": true,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "__label": "use potion"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f8512637-ffa5-4605-80c1-94ec99861a45",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 4
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c501b711-4c15-4982-b7f5-e5b1829b196e",
+                                                    "command": "EVENT_ACTOR_INVOKE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "5747da49-58b6-4dd7-a694-39d4805c9c76",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "f201ab3f-4b1b-4f1a-baf0-b0522274bd2b",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ef6d23f9-3b77-4c88-884e-b0a18853abc5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -18714,6 +18904,13 @@
                                                 "type": "number",
                                                 "value": 1
                                             }
+                                        }
+                                    },
+                                    {
+                                        "id": "13ff260e-b22f-494f-ae6b-0584450ffc18",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "02e4cb2f-f1da-4b5e-8d7f-a3d35556843c"
                                         }
                                     },
                                     {
@@ -31569,14 +31766,72 @@
                                         }
                                     },
                                     {
-                                        "id": "b34e0067-d6c9-476d-93ba-391b0c88b421",
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "id": "c9c7892c-71d0-4c38-bfc5-89074a07ee3e",
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
                                         "args": {
-                                            "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
+                                            "variable": "7",
+                                            "flag": "5",
+                                            "__collapseElse": false,
+                                            "__label": "Has potion"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "1b914579-f1ec-418e-9e37-3982b861f231",
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": true,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "__label": "use potion"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "efe7c7c7-1a44-4c9d-9690-90c1280dcc98",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 4
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "939e2c5b-04bd-4342-b787-999d6fc908bb",
+                                                    "command": "EVENT_ACTOR_INVOKE",
+                                                    "args": {
+                                                        "actorId": "84f74532-b149-48d3-8880-394832fec41d"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d0fed4fe-2fbb-4545-81e9-57fce2d9c122",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "72543160-5b41-4a18-82a0-467f4c66e01e",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ec4e860d-f0b9-4d14-86ed-171e1878edd5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -31778,6 +32033,14 @@
                                                 "type": "number",
                                                 "value": 1
                                             }
+                                        }
+                                    },
+                                    {
+                                        "id": "60e59af1-274c-4b72-bf0c-114109a744a6",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "dae3e354-4d9a-4a40-9f52-fd6bbfb104a7",
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -36274,14 +36537,72 @@
                                         }
                                     },
                                     {
-                                        "id": "4aae71d9-4d5e-444d-8a56-b36f663ab1c2",
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "id": "03d2f758-0cfb-4817-9202-888ba520cbdc",
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
                                         "args": {
-                                            "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
+                                            "variable": "7",
+                                            "flag": "5",
+                                            "__collapseElse": false,
+                                            "__label": "Has potion"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "511a9519-7907-4b0f-b0e3-4410161b0968",
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": true,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "__label": "use potion"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "fa5b6fe2-2db9-4022-87f3-9274eeaa3bbe",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 4
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d662762d-9db4-4876-9241-7e05d34cfb12",
+                                                    "command": "EVENT_ACTOR_INVOKE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "a2f7c7b2-bce2-46eb-9eab-f61010cbb615",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "359e2f0a-51a7-44bb-a9a9-76b4ed258674",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d0a7b5cf-856d-419f-9641-c975efec4327",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -36483,6 +36804,14 @@
                                                 "type": "number",
                                                 "value": 1
                                             }
+                                        }
+                                    },
+                                    {
+                                        "id": "05211d56-5789-4193-b7e5-67ac7424a0d5",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "ead70894-377e-48f6-be52-093dd7a67d68",
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -40954,14 +41283,72 @@
                                         }
                                     },
                                     {
-                                        "id": "8a59d77a-01d1-4713-9092-1abe4f4dd7f4",
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "id": "4e525dba-f565-4ca4-b969-08413974e8de",
+                                        "command": "EVENT_IF_FLAGS_COMPARE",
                                         "args": {
-                                            "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
+                                            "variable": "7",
+                                            "flag": "5",
+                                            "__collapseElse": false,
+                                            "__label": "Has potion"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "6aad0498-d687-40ea-af57-01c069bf7c49",
+                                                    "command": "EVENT_CLEAR_FLAGS",
+                                                    "args": {
+                                                        "variable": "7",
+                                                        "flag1": false,
+                                                        "flag2": false,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": true,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "__label": "use potion"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "36d87d79-d405-4375-9ed0-29cd642384da",
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "value": {
+                                                            "type": "number",
+                                                            "value": 4
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "33b6459b-8eaf-4e22-bac3-bd576291c87f",
+                                                    "command": "EVENT_ACTOR_INVOKE",
+                                                    "args": {
+                                                        "actorId": "$self$"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "39882100-8b27-41ec-9205-44f6854b1fd9",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "3c69bd45-7e81-4eb4-8974-c6e291f9ed88",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "f5905846-d9fc-4c6b-a9ae-d977dadfe33b",
+                                                        "x": 0,
+                                                        "y": 0,
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c08b0476-65f6-49f6-b6c9-72018dedd6a5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -41163,6 +41550,14 @@
                                                 "type": "number",
                                                 "value": 1
                                             }
+                                        }
+                                    },
+                                    {
+                                        "id": "eb6f1015-85b2-47fe-8c6e-5b90c7dc9f0b",
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "6d7456a2-4e8f-4d7b-810b-c976a4e46c06",
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -44213,7 +44608,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 1996,
-        "worldScrollY": 5946,
+        "worldScrollY": 6211,
         "zoom": 225,
         "customColorsEnabled": false,
         "defaultBackgroundPaletteIds": [

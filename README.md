@@ -128,3 +128,12 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ![Peahat CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/Llort.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b6/LA_Stalfos_Sprite.png" alt="Stalfos DMG" width="32" height="32"/>
+
+# NPC References
+Ogbam forest shop keeper -> shopkeeper
+witch in Ogbam forest -> syrup
+Empty bottle lady -> grandma ulrira
+hungry mother moblin inn -> mamasha
+
+moblin innkeep -> trendy game guy
+moblin inn patron -> madam meow-meow, grandpa ulrira, birdkeeper

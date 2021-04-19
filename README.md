@@ -129,6 +129,11 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b6/LA_Stalfos_Sprite.png" alt="Stalfos DMG" width="32" height="32"/>
 
+## Bago-Bago -> Piranha
+![Peahat CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/25/ZA_Bago-Bago.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/LA_Piranha_Sprite.png" alt="Piranha DMG" width="32" height="32"/>
+
 # NPC References
 Ogbam forest shop keeper -> shopkeeper \
 witch in Ogbam forest -> syrup \

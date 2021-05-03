@@ -134,11 +134,24 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/LA_Piranha_Sprite.png" alt="Piranha DMG" width="32" height="32"/>
 
-# NPC References
-Ogbam forest shop keeper -> shopkeeper \
-witch in Ogbam forest -> syrup \
-Empty bottle lady -> grandma ulrira \
-hungry mother moblin inn -> mamasha \
+# NPC References (DMG Adventure I)
+Ogbam forest shop keeper -> Shopkeeper \
+Witch in Ogbam forest -> Syrup \
+Empty bottle lady -> Grandma Ulrira \
+Hungry mother near Moblin inn -> Mamasha \
 \
-moblin innkeep -> trendy game guy \
-moblin inn patron -> madam meow-meow, grandpa ulrira, birdkeeper 
+Moblin innkeep -> trendy game guy \
+Moblin inn patron -> Madam Meow-meow, Grandpa Ulrira, Birdkeeper 
+
+# NPC References (DMG Adventure II)
+Alice -> Oracle of ages Lynna City (present) young lady \
+Eric/Ian -> Mamasha's twins \
+Twin's Father -> Papahl \
+Yvonne (music lover) -> Marin \
+Ghost farmer -> Ghost \
+Town square merchant -> Crazy Tracy \
+Bored guy on Upper Street -> Lynna village (past) young man \
+General shop (dog owner) -> Mamamu Yan \
+General shop jester -> Oracle of ages Lynna City (present) Comedian \
+Madam Kriggle -> Oracle of ages Lynna City (present) old lady \
+Blacksmith -> Oracle of ages Lynna village (past) old man

@@ -68,7 +68,7 @@ The same is done for the health (hearts). This was done for DMG Adventure (part 
 - Enemies were responsible for calculating when they hit Zelda
 - The heart / rupee collectible was responsible for dislaying the right collectable item, but it was incorrectly responsible for updating the heart and rupee counter.
 
-# Enemy References
+# Enemy References (DMG Adventure I)
 Where possible enemies have been identified in Zelda's Adventure and their conterpart has been used from Link's Awakening. When the enemy doesn't exist in Link's Awakening I've tried to carefully substitute it with an enemy that is both similar and likely to be unique to Link's Awakening. This is to prevent future iterations of the project from having collisions when I try to identify enemies later in the game and find I've already used their counterpart.
 [Enemies from Zelda's Adventure](https://zelda.gamepedia.com/Enemies_in_Zelda%27s_Adventure) \
 [Enemies from Link's Awakening](https://zelda.gamepedia.com/Enemies_in_Link%27s_Awakening)
@@ -129,10 +129,22 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b6/LA_Stalfos_Sprite.png" alt="Stalfos DMG" width="32" height="32"/>
 
+# Enemy References (DMG Adventure II)
+
 ## Bago-Bago -> Piranha
 ![Peahat CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/25/ZA_Bago-Bago.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/LA_Piranha_Sprite.png" alt="Piranha DMG" width="32" height="32"/>
+
+## Peahat -> Peahat
+![Peahat CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/d/d1/ZA_Peahat_Sprite.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/c4/LA_Peahat_Sprite.png" alt="Peahat DMG" width="32" height="32"/>
+
+## Tektite -> Tektite
+![Tektite CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/32/ZA_Tektite_2.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/85/LA_Tektite_Sprite.png" alt="Tektite DMG" width="32" height="32"/>
 
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
@@ -144,6 +156,7 @@ Moblin innkeep -> trendy game guy \
 Moblin inn patron -> Madam Meow-meow, Grandpa Ulrira, Birdkeeper 
 
 # NPC References (DMG Adventure II)
+## Great Wimbich
 Alice -> Oracle of ages Lynna City (present) young lady \
 Eric/Ian -> Mamasha's twins \
 Twin's Father -> Papahl \
@@ -155,3 +168,6 @@ General shop (dog owner) -> Mamamu Yan \
 General shop jester -> Oracle of ages Lynna City (present) Comedian \
 Madam Kriggle -> Oracle of ages Lynna City (present) old lady \
 Blacksmith -> Oracle of ages Lynna village (past) old man
+## Tolemac
+Plain of Donora trader -> Oracle of ages Dr. Troy \
+Plain of Donora gate keeper -> Lynna City (present) young man

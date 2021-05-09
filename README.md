@@ -146,6 +146,16 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/85/LA_Tektite_Sprite.png" alt="Tektite DMG" width="32" height="32"/>
 
+## Deeler -> Beetle
+![Deeler CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/51/ZA_Deeler_2.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/35/LA_Beetle_Sprite.png" alt="Beetle DMG" width="32" height="32"/>
+
+## Molluska -> Spiny Beetle
+![Tektite CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/cd/Krang.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/12/LA_Spiny_Beetle_Sprite.png" alt="Spiny Beetle DMG" width="32" height="32"/>
+
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
 Witch in Ogbam forest -> Syrup \

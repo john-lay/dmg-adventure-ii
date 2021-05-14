@@ -57,6 +57,15 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 6 is ???)
   * (Flag 7 is ???)
   * (Flag 8 is ???)
+* `$09$: Variable 009` Overworld Flags - `byte`.
+  * (Flag 1 represents Zelda has spoken to the White Steed Lodgekeep)
+  * (Flag 2 is ???)
+  * (Flag 3 is ???)
+  * (Flag 4 is ???)
+  * (Flag 5 is ???)
+  * (Flag 6 is ???)
+  * (Flag 7 is ???)
+  * (Flag 8 is ???)
   
 # Dev Notes
 ## Encapsulation
@@ -178,6 +187,12 @@ General shop (dog owner) -> Mamamu Yan \
 General shop jester -> Oracle of ages Lynna City (present) Comedian \
 Madam Kriggle -> Oracle of ages Lynna City (present) old lady \
 Blacksmith -> Oracle of ages Lynna village (past) old man
+
 ## Tolemac
 Plain of Donora trader -> Oracle of ages Dr. Troy \
-Plain of Donora gate keeper -> Lynna City (present) young man
+Plain of Donora gate keeper -> Lynna City (present) young man \
+White Steed Lodgekeep -> Richard \
+White Steed Patron -> Oracle of ages Lynna City (present) old man \
+White Steed Patron -> Oracle of Seasons Horon City old guy \
+White Steed Patron -> Oracle of Seasons Horon City other old guy \
+Waldensop -> Oracle of ages Mayor Plen

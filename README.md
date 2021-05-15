@@ -194,5 +194,5 @@ Plain of Donora gate keeper -> Lynna City (present) young man \
 White Steed Lodgekeep -> Richard \
 White Steed Patron -> Oracle of ages Lynna City (present) old man \
 White Steed Patron -> Oracle of Seasons Horon City old guy \
-White Steed Patron -> Oracle of Seasons Horon City other old guy \
+White Steed Barman -> Oracle of Seasons Mayor Ruul \
 Waldensop -> Oracle of ages Mayor Plen

@@ -176,23 +176,27 @@ Moblin inn patron -> Madam Meow-meow, Grandpa Ulrira, Birdkeeper
 
 # NPC References (DMG Adventure II)
 ## Great Wimbich
-Alice -> Oracle of ages Lynna City (present) young lady \
+Alice -> Oracle of Ages (past) young lady \
 Eric/Ian -> Mamasha's twins \
 Twin's Father -> Papahl \
 Yvonne (music lover) -> Marin \
 Ghost farmer -> Ghost \
 Town square merchant -> Crazy Tracy \
-Bored guy on Upper Street -> Lynna village (past) young man \
-General shop (dog owner) -> Mamamu Yan \
-General shop jester -> Oracle of ages Lynna City (present) Comedian \
-Madam Kriggle -> Oracle of ages Lynna City (present) old lady \
-Blacksmith -> Oracle of ages Lynna village (past) old man
+Bored guy on Upper Street -> Oracle of Ages (past) young guy \
+Dog on Upper Street -> Oracle of Ages (present) Mamamu Yan's dog \
+General shop (dog owner) -> Oracle of Ages (present) Mamamu Yan \
+General shop jester -> Oracle of Ages (present) Comedian \
+Madam Kriggle -> Oracle of Ages (present) old lady \
+Blacksmith -> Oracle of Ages (past) old guy
 
-## Tolemac
-Plain of Donora trader -> Oracle of ages Dr. Troy \
-Plain of Donora gate keeper -> Lynna City (present) young man \
+## Plain of Donora
+Plain of Donora trader -> Oracle of Ages (present) Dr. Troy \
+Plain of Donora gate keeper -> Oracle of Ages (present) young guy 
+
+## Torian Forest
 White Steed Lodgekeep -> Richard \
-White Steed Patron -> Oracle of ages Lynna City (present) old man \
-White Steed Patron -> Oracle of Seasons Horon City old guy \
+White Steed Patron -> Oracle of Ages (present) old guy \
+White Steed Patron -> Oracle of Seasons old guy \
 White Steed Barman -> Oracle of Seasons Mayor Ruul \
-Waldensop -> Oracle of ages Mayor Plen
+Waldensop -> Oracle of Ages (present) Mayor Plen \
+Sir Basil -> Oracle of Ages (past) Guard 

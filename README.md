@@ -59,7 +59,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 8 is ???)
 * `$09$: Variable 009` Overworld Flags - `byte`.
   * (Flag 1 represents Zelda has spoken to the White Steed Lodgekeep)
-  * (Flag 2 is ???)
+  * (Flag 2 represents Zelda has spoken to Lonlyn in Verna)
   * (Flag 3 is ???)
   * (Flag 4 is ???)
   * (Flag 5 is ???)
@@ -196,7 +196,13 @@ Plain of Donora gate keeper -> Oracle of Ages (present) young guy
 ## Torian Forest
 White Steed Lodgekeep -> Richard \
 White Steed Patron -> Oracle of Ages (present) old guy \
-White Steed Patron -> Oracle of Seasons old guy \
+White Steed Patron -> Oracle of Seasons drunk guy \
 White Steed Barman -> Oracle of Seasons Mayor Ruul \
 Waldensop -> Oracle of Ages (present) Mayor Plen \
 Sir Basil -> Oracle of Ages (past) Guard 
+
+## Verna
+Gwynla (noise spell) -> Oracle of Ages (present) young lady \
+Lonlyn (noise spell) -> Oracle of Seasons old guy \
+Guy with Bard -> Oracle of Ages (past) young guy alt \
+Bard -> Oracle of Seasons Guitar player  

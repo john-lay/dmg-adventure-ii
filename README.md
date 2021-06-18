@@ -48,7 +48,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 6 is potion)
   * (Flag 7 is candle)
   * (Flag 8 is ???)
-* `$08$: Variable 008` Dungeon Items - `byte`.
+* `$08$: Variable 008` Illusion Shrine Items - `byte`.
   * (Flag 1 is the Orb)
   * (Flag 2 is the Map)
   * (Flag 3 is the Compass)

@@ -166,6 +166,11 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/12/LA_Spiny_Beetle_Sprite.png" alt="Spiny Beetle DMG" width="32" height="32"/>
 
+## Jackaroo -> Iron Mask
+![Tektite CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/89/Dinosaur.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/95/LA_Iron_Mask_Sprite.png" alt="Iron Mask DMG" width="32" height="32"/>
+
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
 Witch in Ogbam forest -> Syrup \

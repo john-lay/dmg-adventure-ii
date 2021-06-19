@@ -67,6 +67,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 7 is ???)
   * (Flag 8 is ???)
 * `$10$: Variable 010` Dungeon Room - `number`. (Indicates the dungeon room Zelda occupies)
+* `$11$: Variable 011` Enemy Counter - `number`. (Indicates the number of Zelda has defeated in this scene)
   
 # Dev Notes
 ## Encapsulation

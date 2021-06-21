@@ -168,9 +168,19 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/12/LA_Spiny_Beetle_Sprite.png" alt="Spiny Beetle DMG" width="32" height="32"/>
 
 ## Jackaroo -> Iron Mask
-![Tektite CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/89/Dinosaur.png)
+![Jackaroo CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/8/89/Dinosaur.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/95/LA_Iron_Mask_Sprite.png" alt="Iron Mask DMG" width="32" height="32"/>
+
+## Vire -> Vire
+![Vire CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b5/ZA_Vire_Sprite.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/30/LA_Vire_Sprite.png" alt="Vire DMG" width="40" height="25"/>
+
+## Pols Voice -> Pols Voice
+![Pols Voice CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9f/ZA_Pol%27s_Voice.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/ab/LA_Pols_Voice_Sprite.png" alt="Pols Voice" width="32" height="32"/>
 
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \

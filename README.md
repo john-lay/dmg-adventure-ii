@@ -54,7 +54,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 3 is the Compass)
   * (Flag 4 is key)
   * (Flag 5 is dagger)
-  * (Flag 6 is ???)
+  * (Flag 6 is represents Zelda has placed the Orb on the Pedestal)
   * (Flag 7 is ???)
   * (Flag 8 is ???)
 * `$09$: Variable 009` Overworld Flags - `byte`.

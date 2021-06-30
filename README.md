@@ -60,7 +60,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
 * `$09$: Variable 009` Overworld Flags - `byte`.
   * (Flag 1 represents Zelda has spoken to the White Steed Lodgekeep)
   * (Flag 2 represents Zelda has spoken to Lonlyn in Verna)
-  * (Flag 3 is ???)
+  * (Flag 3 represents Zelda has completed the Illusion Shrine)
   * (Flag 4 is ???)
   * (Flag 5 is ???)
   * (Flag 6 is ???)

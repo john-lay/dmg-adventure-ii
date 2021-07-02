@@ -182,6 +182,11 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/ab/LA_Pols_Voice_Sprite.png" alt="Pols Voice" width="32" height="32"/>
 
+## Romraven -> Dacto
+![Romraven CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/3d/Romraven.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/57/LADX_Dacto_Sprite.png" alt="Dacto" width="32" height="32"/>
+
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
 Witch in Ogbam forest -> Syrup \
@@ -223,3 +228,6 @@ Gwynla (noise spell) -> Oracle of Ages (present) young lady \
 Lonlyn (noise spell) -> Oracle of Seasons old guy \
 Guy with Bard -> Oracle of Ages (past) young guy alt \
 Bard -> Oracle of Seasons Guitar player  
+
+## Around the Air Shrine
+Thabul (outside cave) -> Oracle of Seasons Old Lady

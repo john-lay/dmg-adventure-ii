@@ -136,14 +136,14 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/fd/LA_Shrouded_Stalfos_Sprite.png" alt="Shrouded Stalfos DMG" width="32" height="32"/>
 
 ## Llort (Lort) -> Stalfos
-![Peahat CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/Llort.png)
+![Llort (Lort) CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/e/e5/Llort.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/b6/LA_Stalfos_Sprite.png" alt="Stalfos DMG" width="32" height="32"/>
 
 # Enemy References (DMG Adventure II)
 
 ## Bago-Bago -> Piranha
-![Peahat CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/25/ZA_Bago-Bago.png)
+![Bago-Bago CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/25/ZA_Bago-Bago.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/LA_Piranha_Sprite.png" alt="Piranha DMG" width="32" height="32"/>
 
@@ -163,7 +163,7 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/35/LA_Beetle_Sprite.png" alt="Beetle DMG" width="32" height="32"/>
 
 ## Molluska -> Spiny Beetle
-![Tektite CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/cd/Krang.png)
+![Molluska CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/cd/Krang.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/12/LA_Spiny_Beetle_Sprite.png" alt="Spiny Beetle DMG" width="32" height="32"/>
 
@@ -180,17 +180,17 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ## Pols Voice -> Pols Voice
 ![Pols Voice CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9f/ZA_Pol%27s_Voice.png)
 ->
-<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/ab/LA_Pols_Voice_Sprite.png" alt="Pols Voice" width="32" height="32"/>
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/ab/LA_Pols_Voice_Sprite.png" alt="Pols Voice DMG" width="32" height="32"/>
 
 ## Romraven -> Dacto
 ![Romraven CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/3d/Romraven.png)
 ->
-<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/98/LA_Dacto_Sprite.png" alt="Dacto" width="32" height="32"/>
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/98/LA_Dacto_Sprite.png" alt="Dacto DMG" width="32" height="32"/>
 
-## Lowder -> DacHard Hat Beetleto
+## Lowder -> Hard Hat Beetle
 ![Lowder CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/29/ZA_Lowder.png)
 ->
-<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/69/LA_Hardhat_Beetle_Sprite.png" alt="Hard Hat Beetle" width="32" height="32"/>
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/69/LA_Hardhat_Beetle_Sprite.png" alt="Hard Hat Beetle DMG" width="32" height="32"/>
 
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \

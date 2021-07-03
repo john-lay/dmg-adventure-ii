@@ -80,7 +80,7 @@ The same is done for the health (hearts). This was done for DMG Adventure (part 
 - The heart / rupee collectible was responsible for dislaying the right collectable item, but it was incorrectly responsible for updating the heart and rupee counter.
 
 # Enemy References (DMG Adventure I)
-Where possible enemies have been identified in Zelda's Adventure and their conterpart has been used from Link's Awakening. When the enemy doesn't exist in Link's Awakening I've tried to carefully substitute it with an enemy that is both similar and likely to be unique to Link's Awakening. This is to prevent future iterations of the project from having collisions when I try to identify enemies later in the game and find I've already used their counterpart.
+Where possible enemies have been identified in Zelda's Adventure and their conterpart has been used from Link's Awakening. When the enemy doesn't exist in Link's Awakening I've tried to carefully substitute it with an enemy that is both similar and likely to be unique to Link's Awakening. This is to prevent future iterations of the project from having collisions when I try to identify enemies later in the game and find I've already used their counterpart. \
 [Enemies from Zelda's Adventure](https://zelda.gamepedia.com/Enemies_in_Zelda%27s_Adventure) \
 [Enemies from Link's Awakening](https://zelda.gamepedia.com/Enemies_in_Link%27s_Awakening)
 
@@ -185,7 +185,12 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ## Romraven -> Dacto
 ![Romraven CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/3d/Romraven.png)
 ->
-<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/5/57/LADX_Dacto_Sprite.png" alt="Dacto" width="32" height="32"/>
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/98/LA_Dacto_Sprite.png" alt="Dacto" width="32" height="32"/>
+
+## Lowder -> DacHard Hat Beetleto
+![Lowder CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/29/ZA_Lowder.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/69/LA_Hardhat_Beetle_Sprite.png" alt="Hard Hat Beetle" width="32" height="32"/>
 
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
@@ -227,7 +232,9 @@ Sir Basil -> Oracle of Ages (past) Guard
 Gwynla (noise spell) -> Oracle of Ages (present) young lady \
 Lonlyn (noise spell) -> Oracle of Seasons old guy \
 Guy with Bard -> Oracle of Ages (past) young guy alt \
-Bard -> Oracle of Seasons Guitar player  
+Bard -> Oracle of Seasons Guitar player 
 
 ## Around the Air Shrine
+Bitterbeck (by the fire) -> Fisherman \
+Nimonee (north of Air Shrine) -> Oracle of Seasons Impa \
 Thabul (outside cave) -> Oracle of Seasons Old Lady

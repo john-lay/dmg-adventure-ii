@@ -5,9 +5,10 @@
  <tileset firstgid="113" source="../../../dmg-adventure/assets/tilemaps/overworld-2.tsx"/>
  <tileset firstgid="689" source="../../../dmg-adventure/assets/tilemaps/doors.tsx"/>
  <tileset firstgid="753" source="../../../dmg-adventure/assets/tilemaps/animated-tiles.tsx"/>
+ <tileset firstgid="977" source="../../../dmg-adventure/assets/tilemaps/items-2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="18">
   <data encoding="csv">
-93,16,93,93,93,93,93,93,93,93,93,93,93,93,93,14,14,14,14,93,
+93,16,93,93,1025,93,93,93,93,93,93,93,93,93,93,14,14,14,14,93,
 221,222,221,222,221,222,221,222,221,222,221,222,221,58,3221225529,754,754,754,754,754,
 237,238,237,238,237,238,237,238,237,238,237,238,237,58,3221225529,754,754,754,754,754,
 221,222,221,222,221,222,221,222,221,222,100,222,221,58,3221225529,754,754,754,754,754,

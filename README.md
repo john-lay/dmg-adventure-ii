@@ -48,7 +48,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 6 is potion)
   * (Flag 7 is candle)
   * (Flag 8 is ???)
-* `$08$: Variable 008` Illusion Shrine Items - `byte`.
+* `$08$: Variable 008` Illusion Shrine Flags - `byte`.
   * (Flag 1 is the Orb)
   * (Flag 2 is the Map)
   * (Flag 3 is the Compass)
@@ -68,6 +68,15 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 8 is ???)
 * `$10$: Variable 010` Dungeon Room - `number`. (Indicates the dungeon room Zelda occupies)
 * `$11$: Variable 011` Enemy Counter - `number`. (Indicates the number of Zelda has defeated in this scene)
+* `$12$: Variable 012` Air Shrine Flags - `byte`.
+  * (Flag 1 represents Zelda has the Calm spell equipped - costs 1 Rupee to cast)
+  * (Flag 2 is the Map)
+  * (Flag 3 is the Compass)
+  * (Flag 4 is the Rug)
+  * (Flag 5 is ???)
+  * (Flag 6 is ???)
+  * (Flag 7 is ???)
+  * (Flag 8 is ???)
   
 # Dev Notes
 ## Encapsulation

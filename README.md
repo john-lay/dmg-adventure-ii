@@ -73,8 +73,8 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 2 is the Map)
   * (Flag 3 is the Compass)
   * (Flag 4 is the Rug)
-  * (Flag 5 is ???)
-  * (Flag 6 is ???)
+  * (Flag 5 is the Bow + Arrow)
+  * (Flag 6 represents Zelda has the Bow + Arrow equipped - costs 1 Rupee to cast)
   * (Flag 7 is ???)
   * (Flag 8 is ???)
   
@@ -201,10 +201,41 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/69/LA_Hardhat_Beetle_Sprite.png" alt="Hard Hat Beetle DMG" width="32" height="32"/>
 
+## Vapora -> Oracle of Ages Smog
+![Vapora CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f8/Vapora.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4f/OoA_Smog_Sprite.png" alt="OOA Smog DMG" width="32" height="32"/>
+
+## Dragonfly -> Battle Bat (Eagle tower's boss's minion)
+![Dragonfly CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/22/Dragonflies.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0f/LA_Battle_Bat_Sprite.png" alt="Battle Bat DMG" width="32" height="32"/>
+
+## Loccasins -> Battle Bat (Eagle tower's boss's minion)
+![Loccasins CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/08/Loccasins.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0f/LA_Battle_Bat_Sprite.png" alt="Battle Bat DMG" width="32" height="32"/>
+
+## Volta -> Pairodd
+![Volta CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/05/ZA_Volta_Sprite.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/02/LA_Pairodd_Sprite.png" alt="Pairodd DMG" width="32" height="32"/>
+
+## Crystal Shard -> Oracle of Seasons Frypolar (ice attack)
+![Crystal Shard CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/93/Crystal_Shards.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/c5/Frypolar_Ice.png" alt="OOS Frypolar DMG" width="32" height="32"/>
+
 ## Tornado -> Oracle of Ages/Seasons Gale seed
 ![Tornado CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7d/ZA_Tornado_Sprite.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/c7/OoS_Gale_Seed_Sprite.png" alt="OOA/OOS Gale Seed DMG" width="32" height="32"/>
+
+## Puffers (Baboon Head) -> Oracle of Seasons (modified) Magnite
+![Puffers (Baboon Head) CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/1/1b/No_Clue.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f5/OoS_Magunesu_North_Sprite.png" alt="OOS Magnite DMG" width="32" height="32"/>
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/OoS_Magunesu_South_Sprite.png" alt="OOS OOS Magnite DMG" width="32" height="32"/>
 
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \

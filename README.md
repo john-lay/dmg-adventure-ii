@@ -201,6 +201,11 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/6/69/LA_Hardhat_Beetle_Sprite.png" alt="Hard Hat Beetle DMG" width="32" height="32"/>
 
+## Tornado -> Oracle of Ages/Seasons Gale seed
+![Tornado CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7d/ZA_Tornado_Sprite.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/c/c7/OoS_Gale_Seed_Sprite.png" alt="OOA/OOS Gale Seed DMG" width="32" height="32"/>
+
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
 Witch in Ogbam forest -> Syrup \

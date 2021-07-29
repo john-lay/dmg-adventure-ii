@@ -191,6 +191,11 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/a/ab/LA_Pols_Voice_Sprite.png" alt="Pols Voice DMG" width="32" height="32"/>
 
+## Patra -> Oracle of Ages Eyesoar
+![Patra CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/03/ZA_Patra_Sprite.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda/images/6/65/Eyesoar.gif" alt="OOA Eyesoar DMG" width="32" height="32"/>
+
 ## Romraven -> Dacto
 ![Romraven CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/3d/Romraven.png)
 ->

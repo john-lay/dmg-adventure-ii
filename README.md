@@ -209,7 +209,7 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ## Vapora -> Oracle of Ages Smog
 ![Vapora CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f8/Vapora.png)
 ->
-<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4f/OoA_Smog_Sprite.png" alt="OOA Smog DMG" width="32" height="32"/>
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4f/OoA_Smog_Sprite.png" alt="OOA Smog DMG" width="48" height="48"/>
 
 ## Dragonfly -> Battle Bat (Eagle tower's boss's minion)
 ![Dragonfly CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/22/Dragonflies.png)

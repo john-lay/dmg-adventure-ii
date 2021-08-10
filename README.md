@@ -76,7 +76,7 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 5 is the Bow + Arrow)
   * (Flag 6 represents Zelda has the Bow + Arrow equipped - costs 1 Rupee to cast)
   * (Flag 7 represents Zelda has defeated the second Vapora)
-  * (Flag 8 is ???)
+  * (Flag 8 Represents Zelda has restored the bridge)
   
 # Dev Notes
 ## Encapsulation

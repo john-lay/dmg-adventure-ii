@@ -77,6 +77,15 @@ A listing of variables and their types in re-usable components (Actors/Scenes)
   * (Flag 6 represents Zelda has the Bow + Arrow equipped - costs 1 Rupee to cast)
   * (Flag 7 represents Zelda has defeated the second Vapora)
   * (Flag 8 Represents Zelda has restored the bridge)
+* `$13$: Variable 013` Destiny Shrine Flags - `byte`.
+  * (Flag 1 represents Zelda has the Calm spell equipped - costs 1 Rupee to cast)
+  * (Flag 2 is the Map)
+  * (Flag 3 is the Compass)
+  * (Flag 4 is ???)
+  * (Flag 5 is ???)
+  * (Flag 6 is ???)
+  * (Flag 7 is ???)
+  * (Flag 8 is ???)
   
 # Dev Notes
 ## Encapsulation
@@ -211,12 +220,12 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/4/4f/OoA_Smog_Sprite.png" alt="OOA Smog DMG" width="48" height="48"/>
 
-## Dragonfly -> Battle Bat (Eagle tower's boss's minion)
+## Dragonfly -> Battle Bat (Grim Creeper's minion)
 ![Dragonfly CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/2/22/Dragonflies.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0f/LA_Battle_Bat_Sprite.png" alt="Battle Bat DMG" width="32" height="32"/>
 
-## Loccasins -> Battle Bat (Eagle tower's boss's minion)
+## Loccasins -> Battle Bat (Grim Creeper's minion)
 ![Loccasins CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/08/Loccasins.png)
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0f/LA_Battle_Bat_Sprite.png" alt="Battle Bat DMG" width="32" height="32"/>
@@ -241,6 +250,11 @@ Where possible enemies have been identified in Zelda's Adventure and their conte
 ->
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/f/f5/OoS_Magunesu_North_Sprite.png" alt="OOS Magnite DMG" width="32" height="32"/>
 <img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/7/7a/OoS_Magunesu_South_Sprite.png" alt="OOS OOS Magnite DMG" width="32" height="32"/>
+
+## Gibdo -> Gibdo
+![Gibdo CDi](https://static.wikia.nocookie.net/zelda_gamepedia_en/images/3/3e/ZA_Gibdo.png)
+->
+<img src="https://static.wikia.nocookie.net/zelda_gamepedia_en/images/0/0c/LA_Gibdo_Sprite.png" alt="Gibdo DMG" width="32" height="32"/>
 
 # NPC References (DMG Adventure I)
 Ogbam forest shop keeper -> Shopkeeper \
